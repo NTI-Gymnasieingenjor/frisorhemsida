@@ -3,6 +3,8 @@ import time
 
 driver = webdriver.Chrome()
 
+
+# Testar om hemsidan är tillgänglig från internet
 try:
     driver.get("https://fabilus.gitlab.io/frisorhemsida/")
 except:
