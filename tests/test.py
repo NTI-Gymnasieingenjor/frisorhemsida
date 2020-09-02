@@ -17,7 +17,7 @@ resolutions = [[1024, 768],
                [1920, 1080],
                [2560, 1440]]
 
-# Kollar om det finns en mapp för screenshots och skapar mappen ifall den inte existerar
+# Skapar en mapp för screenshots ifall den inte existerar
 if not os.path.exists("screenshots"):
     os.mkdir("screenshots")
 
