@@ -26,11 +26,8 @@ Kommentarer: Visual Studio Code [CTRL + *]
 
 ## Definition of Done
 
-- Koden är incheckad och klar i Gitlab
-- Kommentarer i koden klara
-- Genererad teknisk dokumentation utifrån kod och egen text med t.ex. sphinx
-- Tester klara (och koden klarar dem)
-- En färdig “produkt”. Antingen en hemsida som kan läggas upp eller ett program paketerat för installation hos kund. (Exakt vad detta innebär får vi komma på själva)
-
-
-
+- All kod finns uppe på Gitlab.
+- Kommentarer i koden klara.
+- All kod klarar de tester som skrivits för dem.
+- Allt som är färdigt ska ligga uppe på hemsidan.
+- Koden ska klara validering
