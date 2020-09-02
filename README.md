@@ -11,6 +11,7 @@ Visual Studio Code
 *Plugins:*
 - *Live Server*
 - *Python Extension Pack*
+- *Live Share*
 
 Git v.2.25.1.windows.1
 
