@@ -11,6 +11,7 @@ Visual Studio Code
 *Plugins:*
 - *Live Server*
 - *Python Extension Pack*
+- *Live Share*
 
 Git v.2.25.1.windows.1
 
@@ -27,7 +28,7 @@ Kommentarer: Visual Studio Code [CTRL + *]
 ## Definition of Done
 
 - All kod finns uppe på Gitlab.
+- All kod tillhörande hemsidan ska ligga uppe på hemsidan
 - Kommentarer i koden klara.
 - All kod klarar de tester som skrivits för dem.
-- Allt som är färdigt ska ligga uppe på hemsidan.
 - Koden ska klara validering
