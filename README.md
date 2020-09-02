@@ -30,5 +30,5 @@ Kommentarer: Visual Studio Code [CTRL + *]
 - All kod finns uppe på Gitlab.
 - Kommentarer i koden klara.
 - All kod klarar de tester som skrivits för dem.
-- Allt som är färdigt ska ligga uppe på hemsidan.
+- All kod tillhörande hemsidan ska ligga uppe på hemsidan
 - Koden ska klara validering
