@@ -1,3 +1,21 @@
-body {
-    color: gray;
+@font-face {
+    font-family: "RobotoThin";
+    src: url("Roboto-Thin.ttf");
+}
+
+/* body {
+    
+} */
+
+h1 {
+    font-family: "RobotoThin";
+    font-size: 7vh;
+}
+
+.text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* -ms-transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
 }
