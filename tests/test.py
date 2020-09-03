@@ -4,11 +4,12 @@ import os
 
 driver = webdriver.Chrome()
 
-# Testar om hemsidan är tillgänglig från internet
+# Testar om filen existerar
 try:
-    driver.get("https://fabilus.gitlab.io/frisorhemsida/")
+    driver.get("file://{}/index.html".format(os.getcwd()))
 except:
-    print("Hemsida inte tillgänglig på internet")
+    print("Filen existerar inte.")
+    quit()
 
 # Upplösningar som programmet ska ta screenshots av
 resolutions = [[1024, 768],
