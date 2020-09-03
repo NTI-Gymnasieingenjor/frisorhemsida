@@ -6,6 +6,7 @@ import sys
 driver = webdriver.Chrome()
 
 # Kollar om ett argument har skickats med, i vilket fall hemsidan som ligger uppe testas istället för filerna på datorn
+# Starta filen i VSCode med F5 (debugging) för att skicka med argumentet "online", använd annars [CTRL + F5] (normal)
 if len(sys.argv) > 1:
     page = "https://fabilus.gitlab.io/frisorhemsida"
 else:
