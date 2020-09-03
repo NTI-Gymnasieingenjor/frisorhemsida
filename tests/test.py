@@ -8,7 +8,7 @@ driver = webdriver.Chrome()
 try:
     driver.get("file://{}/index.html".format(os.getcwd()))
 except:
-    print("Filen existerar inte.")
+    print("Kan inte hitta index.html")
     quit()
 
 # Upplösningar som programmet ska ta screenshots av
