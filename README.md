@@ -32,3 +32,4 @@ Kommentarer: Visual Studio Code [CTRL + *]
 - Kommentarer i koden klara.
 - All kod klarar de tester som skrivits för dem.
 - Koden ska klara validering
+- Dokumentation där det är lämpligt
