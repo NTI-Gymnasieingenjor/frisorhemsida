@@ -1,4 +1,4 @@
-# Frisörhemsida
+# Hemsida för Salong Gloria
 
 ## Programmeringsspråk
 
@@ -33,3 +33,7 @@ Kommentarer: Visual Studio Code [CTRL + *]
 - All kod klarar de tester som skrivits för dem.
 - Koden ska klara validering
 - Dokumentation där det är lämpligt
+
+## Dokumentation
+
+https://gitlab.com/fabilus/frisorhemsida/-/blob/master/dokumentation.md
