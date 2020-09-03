@@ -1,14 +1,21 @@
 from selenium import webdriver
 import time
 import os
+import sys
 
 driver = webdriver.Chrome()
 
-# Testar om filen existerar
+# Kollar om ett argument har skickats med, i vilket fall hemsidan som ligger uppe testas istället för filerna på datorn
+if len(sys.argv) > 1:
+    page = "https://fabilus.gitlab.io/frisorhemsida"
+else:
+    page = "file://{}\index.html".format(os.getcwd())
+
+# Testar om filen existerar/hemsidan ligger uppe
 try:
-    driver.get("file://{}/index.html".format(os.getcwd()))
+    driver.get(page)
 except:
-    print("Kan inte hitta index.html")
+    print("Kan inte hitta filen/länken")
     quit()
 
 # Kollar om företagets namn står någonstans på sidan
