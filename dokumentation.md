@@ -18,10 +18,12 @@ Validatorn använder kommandot *curl* för att skicka kod till hemsidan och få 
 
 
 Information om CSS-validatorn:
+- https://jigsaw.w3.org/css-validator
 - https://jigsaw.w3.org/css-validator/manual.html
-- https://validator.nu/
+
 
 Information om HTML-validatorn:
+- https://validator.nu/
 - https://github.com/validator/validator/wiki/Service-%C2%BB-Input-%C2%BB-textarea
 - https://github.com/validator/validator/wiki/Service-%C2%BB-Common-params
 
