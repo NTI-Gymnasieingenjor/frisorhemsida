@@ -3,6 +3,7 @@ from selenium.webdriver.chrome.options import Options
 import os
 import sys
 
+# Startar chrome "headless", alltså att webbläsar-rutan inte syns
 chrome_options = Options()
 chrome_options.add_argument("--headless")
 
