@@ -27,7 +27,8 @@ resolutions = [[1024, 768],
                [1280, 800],
                [1366, 768],
                [1920, 1080],
-               [2560, 1440]]
+               [2560, 1440],
+               [3840, 2160]]
 
 # Skapar en mapp för screenshots ifall den inte existerar
 if not os.path.exists("screenshots"):
