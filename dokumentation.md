@@ -39,3 +39,9 @@ Två problem vi stött på med Live Share är
 - [CTRL + Z] kan förstöra andras kod.
 
 https://fabilus.gitlab.io/frisorhemsida/
+
+## WSL
+
+WSL (Windows Subsystem for Linux) är en funktion i Windows som låter dig köra linux operativsystem och är det vi använde för att köra shell-filen `validation.sh`. 
+
+Vi använder operativsystemet Ubuntu genom WSL. 
