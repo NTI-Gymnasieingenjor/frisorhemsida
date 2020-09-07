@@ -1,7 +1,5 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    // Ställer in så att argumentet "online" alltid skickas med vid VSCode debugging på python-filer. Detta behövs för att screenshots.py och test.py ska kunna användas på hemsidan som ligger uppe.
     "version": "0.2.0",
     "configurations": [
         {
