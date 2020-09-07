@@ -28,7 +28,7 @@ Kommentarer: Visual Studio Code [CTRL + *]
 ## Definition of Done
 
 - All kod finns uppe på Gitlab.
-- All kod tillhörande hemsidan ska ligga uppe på hemsidan
+- All kod ska vara publicerad på hemsidan
 - Kommentarer i koden klara.
 - All kod klarar de tester som skrivits för dem.
 - Koden ska klara validering
