@@ -10,11 +10,11 @@ För tillfället måste `test.py` köras från VSCode med chromedriver.exe i roo
 
 Validation-filerna i "tests"-mappen, validerar kod automatisk när den körs. De kopierar både html- och css-kod och testar dessa genom två olika validators. Om validatorn ser problem med filerna skriver den ut alla error-meddelanden i terminalen. Annars får man än så länge ingen output.
 
-`validation.bat` är för Windows.
-
-`validation.sh` är för Linux.
+`validation.bat` består endast av ett kort kommando som startar den riktiga validatorn: `validation.sh`. Detta system finns bara för att det ska vara lätt och snabbt att köra filen.
 
 Validatorn använder kommandot *curl* för att skicka kod till hemsidan och få svar. Än så länge testar bara validatorn index.html och style.css, inte alla tillgängliga html- och css-filer.
+
+Vi använder WSL för att kunna köra detta på datorn.
 
 
 Information om CSS-validatorn:
@@ -26,6 +26,12 @@ Information om HTML-validatorn:
 - https://validator.nu/
 - https://github.com/validator/validator/wiki/Service-%C2%BB-Input-%C2%BB-textarea
 - https://github.com/validator/validator/wiki/Service-%C2%BB-Common-params
+
+## WSL
+
+WSL (Windows Subsystem for Linux) är en funktion i Windows som låter dig köra ett helt Linux-operativsystem.
+
+Vi använder operativsystemet Ubuntu genom WSL för att arbeta med shell-filer.
 
 ## Live Share
 
@@ -39,9 +45,3 @@ Två problem vi stött på med Live Share är
 - [CTRL + Z] kan förstöra andras kod.
 
 https://fabilus.gitlab.io/frisorhemsida/
-
-## WSL
-
-WSL (Windows Subsystem for Linux) är en funktion i Windows som låter dig köra linux operativsystem och är det vi använde för att köra shell-filen `validation.sh`. 
-
-Vi använder operativsystemet Ubuntu genom WSL. 
