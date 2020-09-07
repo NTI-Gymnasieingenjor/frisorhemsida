@@ -1,8 +1,12 @@
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 import os
 import sys
 
-driver = webdriver.Chrome()
+chrome_options = Options()
+chrome_options.add_argument("--headless")
+
+driver = webdriver.Chrome(options=chrome_options)
 
 # Kollar om ett argument har skickats med, i vilket fall hemsidan som ligger uppe testas istället för filerna på datorn
 # Starta filen i VSCode med F5 (debugging) för att skicka med argumentet "online", använd annars [CTRL + F5] (normal)
