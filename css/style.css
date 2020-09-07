@@ -1,3 +1,4 @@
+/* Länkar till externt typsnitt */
 @font-face {
     font-family: "RobotoThin";
     src: url("../fonts/Roboto-Thin.ttf");
@@ -8,6 +9,7 @@ h1 {
     font-size: 50px;
 }
 
+/* Centrerar */
 .text {
     position: absolute;
     left: 50%;
