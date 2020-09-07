@@ -15,6 +15,8 @@ Visual Studio Code
 
 Git v.2.25.1.windows.1
 
+WSL - Ubuntu 20.04.1
+
 ## Kodningsstandard
 
 Default Format on Save (VSCode)
