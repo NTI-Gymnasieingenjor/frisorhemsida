@@ -1,11 +1,8 @@
 /* Länkar till externt typsnitt */
-@font-face {
-    font-family: "RobotoThin";
-    src: url("../fonts/Roboto-Thin.ttf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 h1 {
-    font-family: "RobotoThin";
+    font-family: 'Roboto', sans-serif;
     font-size: 50px;
 }
 
