@@ -11,8 +11,7 @@ chrome_options.add_argument("--headless")
 driver = webdriver.Chrome(options=chrome_options)
 
 try:
-    # Kollar om ett argumenar skickats med, i vilket fall hemsidan som ligger uppe testas istället för filerna på datorn
-    # Starta filen i VSCode F5(debugging) för att skicka med argumentet "online", använd annars[CTRL + F5](normal)
+    # Kollar om argumentet "online" skickades med, i vilket fall hemsidan på nätet testas. Annars testas den lokala filen.
     if len(sys.argv) > 1 and sys.argv[1] == "online":
         page = "https://fabilus.gitlab.io/frisorhemsida"
 
