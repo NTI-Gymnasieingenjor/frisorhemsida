@@ -6,6 +6,12 @@
 
 För tillfället måste `test.py` köras från VSCode med chromedriver.exe i root working directory.
 
+### Screenshots
+
+`screenshots.py` tar screenshots på hemsidan lokalt/online i olika upplösningar som definieras i en array i början av koden.
+
+    I både test.py och screenshots.py kan man skicka med argumentet "online" för att testa hemsidan på nätet. Om argumentet inte skickas med så testas den lokala filen.
+
 ## HTML/CSS-validation
 
 Validation-filerna i "tests"-mappen, validerar kod automatisk när den körs. De kopierar både html- och css-kod och testar dessa genom två olika validators. Om validatorn ser problem med filerna skriver den ut alla error-meddelanden i terminalen. Annars får man än så länge ingen output.
