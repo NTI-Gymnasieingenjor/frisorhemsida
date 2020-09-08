@@ -6,12 +6,14 @@ HTML5/CSS3 & Python 3.8.5
 
 ## Utvecklingsmiljöstandard
 
-Visual Studio Code
-
-*Plugins:*
+*Visual Studio Code-plugin:*
 - *Live Server*
 - *Python Extension Pack*
 - *Live Share*
+
+*Python 3.8.2-moduler:*
+- *Selenium*
+- *Requests*
 
 Git v.2.25.1.windows.1
 
