@@ -10,6 +10,34 @@ chrome_options.add_argument("--headless")
 
 driver = webdriver.Chrome(options=chrome_options)
 
+name = "Salong Gloria"
+phone = "0630-555-555"
+mail = "info@fabilus.gitlab.io"
+address = "Fjällgatan 32H 981 39 KIRUNA"
+opening_hours = [
+    "10-16",
+    "12-15"
+]
+
+
+def page_source_check(value, message):
+    """
+    Kollar igenom html-koden för att se om en viss sträng finns i den
+
+    Parametrar:\n
+        value (str): Strängen som funktionen söker efter
+        message (str): Errormeddelande
+
+    Returnerar:\n
+        Errormeddelandet om strängen inte hittades.
+        Annars skickas en tom sträng tillbaka.
+
+    """
+    if value not in driver.page_source:
+        return message + "\n"
+    return ""
+
+
 try:
     # Kollar om argumentet "online" skickades med, i vilket fall hemsidan på nätet testas. Annars testas den lokala filen.
     if len(sys.argv) > 1 and sys.argv[1] == "online":
@@ -31,10 +59,28 @@ try:
 
     driver.get(page)
 
-    # Kollar om företagets namn står någonstans på sidan
-    if "Salong Gloria" not in driver.page_source:
-        raise Exception(
-            "Det finns inget meddelande om att sidan tillhör företaget!")
+    errors = ""
+
+    # Kollar om företagets namn finns på sidan
+    errors += page_source_check(name,
+                                "Det finns inget meddelande om att sidan tillhör företaget.")
+
+    # Kollar om företagets telefonnummer finns på hemsidan
+    errors += page_source_check(phone, "Telefonnummer till företaget saknas.")
+
+    # Kollar om företagets mail finns på hemsidan
+    errors += page_source_check(mail, "Företagsmail saknas.")
+
+    # Kollar om butikens gatuadress finns på hemsidan
+    errors += page_source_check(address, "Adress saknas.")
+
+    # Kollar om butikens öppettider finns på hemsidan
+    for hours in opening_hours:
+        errors += page_source_check(hours,
+                                    "Öppettiden {} saknas.".format(hours))
+
+    if errors != "":
+        raise Exception(errors)
 
 # Skriver ut error-meddelanden ifall de uppstår
 except Exception as err:
