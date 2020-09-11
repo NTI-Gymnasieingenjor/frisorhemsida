@@ -18,7 +18,7 @@ Validation-filerna i "tests"-mappen, validerar kod automatisk när den körs. De
 
 `validation.bat` består endast av ett kort kommando som startar den riktiga validatorn: `validation.sh`. Detta system finns bara för att det ska vara lätt och snabbt att köra filen.
 
-Validatorn använder kommandot *curl* för att skicka kod till hemsidan och få svar. Än så länge testar bara validatorn index.html och style.css, inte alla tillgängliga html- och css-filer.
+Validatorn använder kommandot *curl* för att skicka kod till hemsidan och få svar. Som standard valideras alla HTML- och CSS-filer som programmet kan hitta, men om man skickar med paremetern "-help", visas ytterliggare info om hur programmet kan användas.
 
 Vi använder WSL för att kunna köra detta på datorn.
 

@@ -1,5 +1,5 @@
 @echo off
-bash -c ./validation.sh
+wsl ./validation.sh %*
 echo.
 echo.
 pause
