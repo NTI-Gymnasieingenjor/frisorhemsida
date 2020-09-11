@@ -82,6 +82,8 @@ try:
     if errors != "":
         raise Exception(errors)
 
+    print("Koden klarar alla tester :)")
+
 # Skriver ut error-meddelanden ifall de uppstår
 except Exception as err:
     print("ERROR:\n" + str(err), file=sys.stderr)
