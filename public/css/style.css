@@ -14,6 +14,10 @@ h1 {
     
 }
 
+a {
+    color: white;
+}
+
 /* Animation när sidan laddas */
 @keyframes fadeIn {
     0%   { opacity: 0; }

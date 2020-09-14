@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from selenium.common.exceptions import NoSuchElementException
 import os
 import sys
 import requests
@@ -23,19 +24,40 @@ opening_hours = [
 
 def page_source_check(value, message):
     """
-    Kollar igenom html-koden för att se om en viss sträng finns i den
-
+    Kollar igenom html-koden för att se om en viss sträng finns i den\n
     Parametrar:\n
         value (str): Strängen som funktionen söker efter
         message (str): Errormeddelande
 
     Returnerar:\n
-        Errormeddelandet om strängen inte hittades.
-        Annars skickas en tom sträng tillbaka.
-
+        Eventuellt errormeddelande
     """
     if value not in driver.page_source:
         return message + "\n"
+    return ""
+
+
+def link_check(link_text, valid_link, message):
+    """
+    Kollar om en länk finns på sidan och är giltig\n
+    Parametrar:\n
+        link_text (str): Hyperlink-texten
+        valid_link (str): Den "riktiga" länk-texten
+        message (str): Errormeddelande
+
+    Returnerar:\n
+        Eventuellt errormeddelande
+    """
+    try:
+        elem = driver.find_element_by_link_text(link_text)
+
+        if elem.get_attribute("href") != valid_link:
+            return message + "\n"
+
+    except NoSuchElementException:
+        return "Inget element med texten \"{}\" existerar\n".format(link_text)
+    except Exception as e:
+        return e
     return ""
 
 
@@ -70,7 +92,7 @@ try:
     errors += page_source_check(phone, "Telefonnummer till företaget saknas.")
 
     # Kollar om företagets mail finns på hemsidan
-    errors += page_source_check(mail, "Företagsmail saknas.")
+    errors += page_source_check(mail, "E-postadress saknas.")
 
     # Kollar om butikens gatuadress finns på hemsidan
     errors += page_source_check(address, "Adress saknas.")
@@ -82,6 +104,17 @@ try:
     for hours in opening_hours:
         errors += page_source_check(hours,
                                     "Öppettiden {} saknas.".format(hours))
+
+    # Väntar i 3 sekunder för att animationen ska bli klar
+    driver.implicitly_wait(3)
+
+    # Kollar om butikens e-postadress är korrekt
+    errors += link_check(mail, "mailto:" + mail,
+                         "Giltig länk till e-post saknas.")
+
+    # Kollar om butikens telefonnummer är korrekt
+    errors += link_check(phone, "tel:" + phone.replace("-", ""),
+                         "Giltig länk till telefonnummer saknas.")
 
     if errors != "":
         raise Exception(errors)
