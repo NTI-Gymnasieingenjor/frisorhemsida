@@ -13,7 +13,8 @@ driver = webdriver.Chrome(options=chrome_options)
 name = "Salong Gloria"
 phone = "0630-555-555"
 mail = "info@fabilus.gitlab.io"
-address = "Fjällgatan 32H 981 39 KIRUNA"
+address = "Fjällgatan 32H"
+postcode = "981 39 KIRUNA"
 opening_hours = [
     "10-16",
     "12-15"
@@ -73,6 +74,9 @@ try:
 
     # Kollar om butikens gatuadress finns på hemsidan
     errors += page_source_check(address, "Adress saknas.")
+
+    # kollar om butikens postnummer finns på hemsidan
+    errors += page_source_check(postcode, "Postnummer saknas.")
 
     # Kollar om butikens öppettider finns på hemsidan
     for hours in opening_hours:
