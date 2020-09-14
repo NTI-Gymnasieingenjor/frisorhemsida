@@ -39,7 +39,7 @@ footer {
     color: white;
 
     opacity: 0;
-    animation: fadeIn .5s 2.0s ease-out forwards;
+    animation: fadeIn .5s 1.5s ease-out forwards;
 }
 
 /* Footerns innehåll */
