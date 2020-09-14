@@ -6,7 +6,7 @@ body {
 
 h1 {
     font-family: 'Roboto', sans-serif;
-    font-weight: bolder;
+    font-weight: 300;
     font-size: 70px;
     
     opacity: 0;
@@ -45,7 +45,7 @@ footer {
 /* Footerns innehåll */
 .container {
     font-family: 'Roboto', sans-serif;
-    font-weight: bolder;
+    font-weight: 400;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
