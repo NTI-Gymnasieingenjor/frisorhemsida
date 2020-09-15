@@ -14,11 +14,11 @@ För tillfället måste `test.py` köras från VSCode med chromedriver.exe i roo
 
 ## HTML/CSS-validation
 
-Validation-filerna i "tests"-mappen, validerar kod automatisk när den körs. De kopierar både html- och css-kod och testar dessa genom två olika validators. Om validatorn ser problem med filerna skriver den ut alla error-meddelanden i terminalen. Annars får man än så länge ingen output.
+`validation.sh` söker igenom "public"-mappen efter HTML- och CSS-filer, och skickar de till två olika validator-hemsidor för att sedan kunna skriva ut deras output i terminalen.
 
 `validation.bat` består endast av ett kort kommando som startar den riktiga validatorn: `validation.sh`. Detta system finns bara för att det ska vara lätt och snabbt att köra filen.
 
-Validatorn använder kommandot *curl* för att skicka kod till hemsidan och få svar. Som standard valideras alla HTML- och CSS-filer som programmet kan hitta, men om man skickar med paremetern "-help", visas ytterliggare info om hur programmet kan användas.
+Validatorn använder kommandot *curl* för att skicka kod till hemsidan och få svar. Som standard valideras alla HTML- och CSS-filer som programmet kan hitta, men om man skickar med argumentet "-help", visas ytterliggare info om hur programmet kan användas. Argument som skickas till `validation.bat` förs vidare till `validation.sh`.
 
 Vi använder WSL för att kunna köra detta på datorn.
 
@@ -32,6 +32,10 @@ Information om HTML-validatorn:
 - https://validator.nu/
 - https://github.com/validator/validator/wiki/Service-%C2%BB-Input-%C2%BB-textarea
 - https://github.com/validator/validator/wiki/Service-%C2%BB-Common-params
+
+## Branches
+
+Projektet har just nu två permanenta branches: `master` och `development`. Detta är för att vi ska kunna köra git push på vår kod utan att det påverkar GitLab Pages-hemsidan, t.ex. ifall ofärdig kod är fast på någons dator. Eftersom vi alltid parprogrammerar kändes detta som nödvändigt, även om det kanske är en tillfällig lösning.
 
 ## WSL
 
