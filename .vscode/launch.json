@@ -9,7 +9,7 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "args": [
-                "online"
+                "-online"
             ]
         }
     ]
