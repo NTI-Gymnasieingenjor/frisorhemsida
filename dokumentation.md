@@ -1,16 +1,17 @@
 # Dokumentation för projekt
 
-## Testning
+## Testning / Screenshots
 
 `testing.py` är en kompilation av tester för de olika funktioner som hemsidan ska innhålla. Varje gång vi lägger till en funktion, så lägger vi även till några rader kod för att testa så att den fungerar. `testing.py` tar även screenshots på index.html i olika upplösningar när den körs.
 
-För tillfället måste `testing.py` köras från VSCode med chromedriver.exe i root working directory.
-
-## Screenshots
+För tillfället måste `testing.py` köras från VSCode med chromedriver.exe/geckodriver.exe i root working directory.
 
 `screenshots.py` tar screenshots på hemsidan lokalt/online i olika upplösningar som definieras i en array i början av koden.
 
-    I både testing.py och screenshots.py kan man skicka med argumentet "-online" för att testa hemsidan på nätet. Om argumentet inte skickas med så testas den lokala filen.
+I både `testing.py` och `screenshots.py` kan man skicka med argument för att påverka hur programmet körs:
+
+- [-online] - Testar sidan på GitLab Pages istället för den lokala sidan
+- [-firefox] - Använder Firefox istället för Chrome.
 
 ## HTML/CSS-validation
 
@@ -49,7 +50,7 @@ Live Share är en extension till VSCode som vi har använt för att kunna arbeta
 
 Detta kan leda till att alla commits på Git ser ut att vara från samma person, så vi ser till att byta host när det är lämpligt.
 
-Två problem vi stött på med Live Share är
+Två problem vi stött på med Live Share är:
 
 - Bara host kan köra filerna.
 - [CTRL + Z] kan förstöra andras kod.
