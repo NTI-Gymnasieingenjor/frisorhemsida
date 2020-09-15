@@ -1,15 +1,23 @@
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.options import Options as ChromeOptions
+from selenium.webdriver.firefox.options import Options as FirefoxOptions
 from selenium.common.exceptions import NoSuchElementException
 import os
 import sys
 import requests
+import time
 
-# Startar chrome "headless", alltså att webbläsar-rutan inte syns
-chrome_options = Options()
-chrome_options.add_argument("--headless")
+# Kollar om argumentet "-firefox" skickats med, i vilket fall firefox används istället för chrome
+if "-firefox" in sys.argv:
+    firefox_options = FirefoxOptions()
+    # Startar webbläsaren "headless", alltså att webbläsar-rutan inte syns
+    firefox_options.add_argument("-headless")
+    driver = webdriver.Firefox(options=firefox_options)
+else:
+    chrome_options = ChromeOptions()
+    chrome_options.add_argument("--headless")
+    driver = webdriver.Chrome(options=chrome_options)
 
-driver = webdriver.Chrome(options=chrome_options)
 
 name = "Salong Gloria"
 phone = "0630-555-555"
@@ -63,7 +71,7 @@ def link_check(link_text, valid_link, message):
 
 try:
     # Kollar om argumentet "online" skickades med, i vilket fall hemsidan på nätet testas. Annars testas den lokala filen.
-    if len(sys.argv) > 1 and sys.argv[1] == "online":
+    if "-online" in sys.argv:
         page = "https://fabilus.gitlab.io/frisorhemsida"
 
         req = requests.get(page)
@@ -77,8 +85,10 @@ try:
     else:
         # Kollar om filen existerar
         page = "{}/public/index.html".format(os.getcwd())
+
         if not os.path.exists(page):
             raise Exception("Kan inte hitta filen: " + page)
+        page = "file://" + page
 
     driver.get(page)
 
@@ -105,8 +115,8 @@ try:
         errors += page_source_check(hours,
                                     "Öppettiden {} saknas.".format(hours))
 
-    # Väntar i 3 sekunder för att animationen ska bli klar
-    driver.implicitly_wait(3)
+    # Väntar in hemsidans animationer
+    time.sleep(2)
 
     # Kollar om butikens e-postadress är korrekt
     errors += link_check(mail, "mailto:" + mail,
