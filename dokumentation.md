@@ -2,15 +2,15 @@
 
 ## Testning
 
-`test.py` är en kompilation av tester för de olika funktioner som hemsidan ska innhålla. Varje gång vi lägger till en funktion, så lägger vi även till några rader kod för att testa så att den fungerar. `test.py` tar även screenshots på index.html i olika upplösningar när den körs.
+`testing.py` är en kompilation av tester för de olika funktioner som hemsidan ska innhålla. Varje gång vi lägger till en funktion, så lägger vi även till några rader kod för att testa så att den fungerar. `testing.py` tar även screenshots på index.html i olika upplösningar när den körs.
 
-För tillfället måste `test.py` köras från VSCode med chromedriver.exe i root working directory.
+För tillfället måste `testing.py` köras från VSCode med chromedriver.exe i root working directory.
 
-### Screenshots
+## Screenshots
 
 `screenshots.py` tar screenshots på hemsidan lokalt/online i olika upplösningar som definieras i en array i början av koden.
 
-    I både test.py och screenshots.py kan man skicka med argumentet "online" för att testa hemsidan på nätet. Om argumentet inte skickas med så testas den lokala filen.
+    I både testing.py och screenshots.py kan man skicka med argumentet "-online" för att testa hemsidan på nätet. Om argumentet inte skickas med så testas den lokala filen.
 
 ## HTML/CSS-validation
 
