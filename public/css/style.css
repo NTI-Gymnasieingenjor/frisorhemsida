@@ -1,71 +1,15 @@
-body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
-h1 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 70px;
-    
-    opacity: 0;
-    animation: fadeIn 1s .5s ease-out forwards;
-    
-}
-
-a {
-    color: white;
-}
-
 /* Animation när sidan laddas */
 @keyframes fadeIn {
     0%   { opacity: 0; }
     100% { opacity: 1; } 
 }
 
-
-.center {
-    position: static;
-    padding-top: 15%;
-    text-align: center;
+h1 {
+    opacity: 0;
+    animation: fadeIn 1s .5s ease-out forwards;
 }
 
 footer {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    background-color: #2b2d2f;
-    color: white;
-
     opacity: 0;
     animation: fadeIn .5s 1.5s ease-out forwards;
-}
-
-/* Footerns innehåll */
-.container {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
- }
-
-.contact {
-    margin: 2%;
-    float: left;
-}
-
-.openinghours {
-    margin: 2%;
-    float: right;
-}
-
-.footertable {
-    border-spacing: 15px 5px;
-}
-
-.footertitle {
-    font-size: x-large;
-    padding-bottom: 15px;
 }
