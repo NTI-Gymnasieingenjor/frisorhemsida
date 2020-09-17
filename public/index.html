@@ -5,89 +5,85 @@
     <meta charset="UTF-8">
     <!-- Gör så att hemsidan anpassas bättre till olika enheter -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salong Gloria</title>
-    <!-- Länkar till externt typsnitt -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Länkar till Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Länkar till typsnittet Roboto -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Länkar till Font Awesome-ikoner -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Salong Gloria</title>
 </head>
 
-<!-- Innehåll-->
+<body style="font-family: 'Roboto', sans-serif;">
 
-<body>
-    <div class="center">
-        <h1>Välkommen till Salong Gloria!</h1>
-    </div>
+    <h1 class="display-2 text-center align-middle" style="margin-top: 17%;">Välkommen till Salong Gloria</h1>
 
-    <footer>
-        <div class="container">
-            <!-- Kontaktinfo -->
-            <div class="contact">
-                <table class="footertable">
-                    <thead>
-                        <tr>
-                            <td colspan="2" class="footertitle">Kontaktinfo</td>
-                        </tr>
-                    </thead>
-                    <tr>
-                        <td>
-                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/>
-                            </svg>
-                        </td>
-                        <td>
-                            <a href="tel:0630555555">0630-555-555</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <svg width="1em" height="1em" viewBox="0 0 16 12" class="bi bi-envelope-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
-                            </svg>
-                        </td>
+    <!-- FOOTER -->
+    <footer class="page-footer fixed-bottom text-light bg-dark">
+        <div class="container-fluid text-center text-md-left">
+            <!-- Rad -->
+            <div class="row mt-4 mb-1">
 
-                        <td>
-                            <a href="mailto:info@fabilus.gitlab.io">
-                                info@fabilus.gitlab.io
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-                                <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
-                            </svg>
-                        </td>
-                        <td>
+                <!-- Tom kolumn -->
+                <div class="col-md-3"></div>
+
+                <!-- Kontaktinfo -->
+                <div class="col-md-2 text-center">
+                    <h4 class="mb-3">Kontaktinfo</h4>
+
+                    <ul class="list-unstyled ">
+                        <li class="mb-2">
+                            <i class="fas fa-phone mr-2"></i>
+                            <a class="text-light" href="tel:0630555555">0630-555-555</a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="fa fa-envelope mr-2"></i>
+                            <a class="text-light" href="mailto:info@fabilus.gitlab.io">info@fabilus.gitlab.io</a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-home mr-2"></i>
                             Fjällgatan 32H<br>
                             981 39 KIRUNA
-                        </td>
-                    </tr>
-                </table>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- Tom kolumn -->
+                <div class="col-md-2"></div>
+
+                <!-- Öppettider -->
+                <div class="col-md-2 text-center">
+
+                    <h4 class="mb-3">Öppettider</h4>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            Måndag - Fredag:
+                            10-16
+                        </li>
+                        <li class="mb-2">
+                            Lördag:
+                            12-15
+                        </li>
+                        <li class="mb-2">
+                            Söndag:
+                            Stängt
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- Tom kolumn -->
+                <div class="col-md-3"></div>
+
             </div>
-            <!-- Öppettider -->
-            <div class="openinghours">
-                <table class="footertable">
-                    <thead>
-                        <tr>
-                            <td colspan="2" class="footertitle">Öppettider</td>
-                        </tr>
-                    </thead>
-                    <tr>
-                        <td>Måndag-Fredag:</td>
-                        <td>10-16</td>
-                    </tr>
-                    <tr>
-                        <td>Lördag:</td>
-                        <td>12-15</td>
-                    </tr>
-                    <tr>
-                        <td>Söndag:</td>
-                        <td>Stängt</td>
-                    </tr>
-                </table>
-            </div>
+
         </div>
+
     </footer>
 
 </body>
