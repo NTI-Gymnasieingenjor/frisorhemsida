@@ -1,17 +1,21 @@
-# Hemsida för Salong Gloria
+# Website Salong Gloria
 
-## Programmeringsspråk
+*https://fabilus.gitlab.io/frisorhemsida/*
 
-HTML5/CSS3 & Python 3.8.5
+## Programming Languages
 
-## Utvecklingsmiljöstandard
+- HTML5
+- CSS3
+- Python 3.8.5
+
+## Development Environment Standard
 
 *Visual Studio Code-plugin:*
 - *Live Server*
 - *Python Extension Pack*
 - *Live Share*
 
-*Python 3.8.2-moduler:*
+*Python 3.8.2-modules:*
 - *Selenium*
 - *Requests*
 
@@ -19,25 +23,22 @@ Git v.2.25.1.windows.1
 
 WSL - Ubuntu 20.04.1
 
-## Kodningsstandard
+## Coding Standard
 
 Default Format on Save (VSCode)
 
-Filnamnsstruktur: jag_heter_jocke
+File name structure: this_is_how_you_do
 
-Variabler/ID/HTML-klasser: jagHeterJocke
+Variables/ID/HTML-classes: Camelnotation (camelCaseExample)
 
-Kommentarer: Visual Studio Code [CTRL + *]
+Comments: Visual Studio Code [CTRL + *]
 
 ## Definition of Done
 
-- All kod finns uppe på Gitlab
-- All kod ska vara publicerad på hemsidan
-- Kommentarer i koden klara.
-- All kod klarar de tester som skrivits för dem.
-- Koden ska klara validering
-- Dokumentation där det är lämpligt
-- Alla i gruppen ska förstå koden
-## Dokumentation
+- The code must be commented and documented when needed
+- All code must pass the respective test and validation
+- All members in the group must understand the code and approve the push
+
+## Documentation
 
 https://gitlab.com/fabilus/frisorhemsida/-/blob/master/dokumentation.md
