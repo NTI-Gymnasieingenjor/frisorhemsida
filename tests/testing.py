@@ -1,139 +1,30 @@
+import unittest
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options as ChromeOptions
-from selenium.webdriver.firefox.options import Options as FirefoxOptions
-from selenium.common.exceptions import NoSuchElementException
-import os
-import sys
-import requests
-import time
-
-# Kollar om argumentet "-firefox" skickats med, i vilket fall firefox används istället för chrome
-if "-firefox" in sys.argv:
-    firefox_options = FirefoxOptions()
-    # Startar webbläsaren "headless", alltså att webbläsar-rutan inte syns
-    firefox_options.add_argument("-headless")
-    driver = webdriver.Firefox(options=firefox_options)
-else:
-    chrome_options = ChromeOptions()
-    chrome_options.add_argument("--headless")
-    driver = webdriver.Chrome(options=chrome_options)
+from selenium.webdriver.common.keys import Keys
 
 
-name = "Salong Gloria"
-phone = "0630-555-555"
-mail = "info@fabilus.gitlab.io"
-address = "Fjällgatan 32H"
-postcode = "981 39 KIRUNA"
-opening_hours = [
-    "10-16",
-    "12-15"
-]
+class PythonOrgSearch(unittest.TestCase):
 
+    def setUp(self):
+        self.driver = webdriver.Firefox()
 
-def page_source_check(value, message):
-    """
-    Kollar igenom html-koden för att se om en viss sträng finns i den\n
-    Parametrar:\n
-        value (str): Strängen som funktionen söker efter
-        message (str): Errormeddelande
+    # Testet startar
+    def test_search_in_python_org(self):
+        driver = self.driver
 
-    Returnerar:\n
-        Eventuellt errormeddelande
-    """
-    if value not in driver.page_source:
-        return message + "\n"
-    return ""
+        # Laddar in hemsidan
+        driver.get("https://fabilus.gitlab.io/frisorhemsida/")
 
+        import re
+        src = driver.page_source
 
-def link_check(link_text, valid_link, message):
-    """
-    Kollar om en länk finns på sidan och är giltig\n
-    Parametrar:\n
-        link_text (str): Hyperlink-texten
-        valid_link (str): Den "riktiga" länk-texten
-        message (str): Errormeddelande
+        def checkExists(word):
+            x = re.search(word, src)
+            self.assertNotEqual(x, None)
 
-    Returnerar:\n
-        Eventuellt errormeddelande
-    """
-    try:
-        elem = driver.find_element_by_link_text(link_text)
+        checkExists(r'Välkommen till Stillhetens spa')
+        checkExists(r'images/Bild_Massage.jpg')
+        checkExists(r'Öppettider')
 
-        if elem.get_attribute("href") != valid_link:
-            return message + "\n"
-
-    except NoSuchElementException:
-        return "Inget element med texten \"{}\" existerar\n".format(link_text)
-    except Exception as e:
-        return e
-    return ""
-
-
-try:
-    # Kollar om argumentet "online" skickades med, i vilket fall hemsidan på nätet testas. Annars testas den lokala filen.
-    if "-online" in sys.argv:
-        page = "https://fabilus.gitlab.io/frisorhemsida"
-
-        req = requests.get(page)
-        req.close()
-
-        # Kollar om hemsidan går att komma åt utan några problem
-        if req.status_code != requests.codes['ok']:
-            raise Exception("Statuskod: " + str(req.status_code) +
-                            "\nLänk: " + page)
-
-    else:
-        # Kollar om filen existerar
-        page = "{}/public/index.html".format(os.getcwd())
-
-        if not os.path.exists(page):
-            raise Exception("Kan inte hitta filen: " + page)
-        page = "file://" + page
-
-    driver.get(page)
-
-    errors = ""
-
-    # Kollar om företagets namn finns på sidan
-    errors += page_source_check(name,
-                                "Det finns inget meddelande om att sidan tillhör företaget.")
-
-    # Kollar om företagets telefonnummer finns på hemsidan
-    errors += page_source_check(phone, "Telefonnummer till företaget saknas.")
-
-    # Kollar om företagets mail finns på hemsidan
-    errors += page_source_check(mail, "E-postadress saknas.")
-
-    # Kollar om butikens gatuadress finns på hemsidan
-    errors += page_source_check(address, "Adress saknas.")
-
-    # kollar om butikens postnummer finns på hemsidan
-    errors += page_source_check(postcode, "Postnummer saknas.")
-
-    # Kollar om butikens öppettider finns på hemsidan
-    for hours in opening_hours:
-        errors += page_source_check(hours,
-                                    "Öppettiden {} saknas.".format(hours))
-
-    # Väntar in hemsidans animationer
-    time.sleep(2)
-
-    # Kollar om butikens e-postadress är korrekt
-    errors += link_check(mail, "mailto:" + mail,
-                         "Giltig länk till e-post saknas.")
-
-    # Kollar om butikens telefonnummer är korrekt
-    errors += link_check(phone, "tel:" + phone.replace("-", ""),
-                         "Giltig länk till telefonnummer saknas.")
-
-    if errors != "":
-        raise Exception(errors)
-
-    print("Koden klarar alla tester :)")
-
-# Skriver ut error-meddelanden ifall de uppstår
-except Exception as err:
-    print("ERROR:\n" + str(err), file=sys.stderr)
-
-# Avslutar chrome
-driver.quit()
+if __name__ == "__main__":
+    unittest.main()
