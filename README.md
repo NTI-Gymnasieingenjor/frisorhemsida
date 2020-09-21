@@ -4,7 +4,7 @@
 
 ## Programming Languages
 
-- HTML5 testing
+- HTML5
 - CSS3
 - Python 3.8.5
 
