@@ -2,7 +2,6 @@ import unittest
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-
 class PythonOrgSearch(unittest.TestCase):
 
     def setUp(self):
@@ -22,9 +21,25 @@ class PythonOrgSearch(unittest.TestCase):
             x = re.search(word, src)
             self.assertNotEqual(x, None)
 
-        checkExists(r'Välkommen till Stillhetens spa')
-        checkExists(r'images/Bild_Massage.jpg')
+        checkExists(r'Välkommen till Salong Gloria')
+        # checkExists(r'images/Bild_Massage.jpg') Kollar bild
         checkExists(r'Öppettider')
+        # checkExists(r'Måndag - Fredag: 10-16')
+        checkExists(r'Lördag')
+
+        # get element  
+        element = driver.find_element_by_xpath("//*[contains(text(), 'Öppettider')]")
+        element = driver.find_element_by_xpath("//*[contains(text(), 'Måndag')]")
+
+        # print complete element 
+        print(element) 
+
+
+        driver.quit
+
 
 if __name__ == "__main__":
     unittest.main()
+
+
+    
