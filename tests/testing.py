@@ -1,45 +1,26 @@
-import unittest
+# Imports the important libraries we are using
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.chrome.options import Options
 
-class PythonOrgSearch(unittest.TestCase):
+# Creates a variable "options" with the Options() class attributes
+options = Options()
+# Sets the headless (Starts a window without ever opening the browser) option to True
+options.headless = True
 
-    def setUp(self):
-        self.driver = webdriver.Firefox()
+# Makes a variable with the path to the chromedriver
+PATH = "C:\Program Files (x86)\chromedriver.exe"
+# Variable with PATH and the headless option that later starts a chrome window
+driver = webdriver.Chrome(PATH, chrome_options=options)
 
-    # Testet startar
-    def test_search_in_python_org(self):
-        driver = self.driver
+# Loads in the website
+driver.get("https://fabilus.gitlab.io/frisorhemsida/")
+# Variable which will look for the specified text ("//*[contains(text(), 'Desired text here')]")
+element = driver.find_element_by_xpath("//*[contains(text(), 'Öppettider')]")
 
-        # Laddar in hemsidan
-        driver.get("https://fabilus.gitlab.io/frisorhemsida/")
+element = driver.find_element_by_xpath("//*[contains(text(), 'Måndag - Fredag:')]")
+element = driver.find_element_by_xpath("//*[contains(text(), '10-16')]")
 
-        import re
-        src = driver.page_source
-
-        def checkExists(word):
-            x = re.search(word, src)
-            self.assertNotEqual(x, None)
-
-        checkExists(r'Välkommen till Salong Gloria')
-        # checkExists(r'images/Bild_Massage.jpg') Kollar bild
-        checkExists(r'Öppettider')
-        # checkExists(r'Måndag - Fredag: 10-16')
-        checkExists(r'Lördag')
-
-        # get element  
-        element = driver.find_element_by_xpath("//*[contains(text(), 'Öppettider')]")
-        element = driver.find_element_by_xpath("//*[contains(text(), 'Måndag')]")
-
-        # print complete element 
-        print(element) 
-
-
-        driver.quit
-
-
-if __name__ == "__main__":
-    unittest.main()
-
-
-    
+# Prints out the element that wasn't found on the website
+print(element) 
+# If all elements are present the code is excellent
+print("Code is working excellent")
