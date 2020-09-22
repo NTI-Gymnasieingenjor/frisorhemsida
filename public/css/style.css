@@ -1,15 +1,18 @@
-/* Animation när sidan laddas */
-@keyframes fadeIn {
+/* Animation when the site loads */
+/* @keyframes fadeIn {
     0%   { opacity: 0; }
     100% { opacity: 1; } 
-}
+} */
 
-h1 {
+
+/* animation: fadeIn hurLänge(s) efterHurLänge(s) Animationstyp (ease-out forwards;) etc */
+
+/* h1 {
     opacity: 0;
-    animation: fadeIn 1s .5s ease-out forwards;
+    animation: fadeIn 1.25s .25s ease-out forwards;
 }
 
 footer {
     opacity: 0;
-    animation: fadeIn .5s 1.5s ease-out forwards;
-}
+    animation: fadeIn .5s .75s ease-out forwards;
+} */
