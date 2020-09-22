@@ -6,7 +6,7 @@ In this project we make use of two branches: `master` and `development`. This is
 
 #
 
-## Live Server
+### Live Server
 
 `Live server` is a good way to check changes quickly.
 
@@ -32,7 +32,7 @@ Setup:
 
 #
 
-## Live Share
+### Live Share
 
 Two or more people on the same code.
 
