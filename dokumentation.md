@@ -4,9 +4,10 @@
 
 In this project we make use of two branches: `master` and `development`. This is so that we can push code to `development` without making any changes to the current GitLab Pages-website, aka `master`. If we are forced to push code for various reasons we can do it easily without risk of intervening with the current live webpage.
 
-#
 
 ### Live Server
+
+#
 
 `Live server` is a good way to check changes quickly.
 
@@ -30,9 +31,9 @@ Setup:
 
 - After a few seconds it will show your current file in your standard browser
 
-#
-
 ### Live Share
+
+#
 
 Two or more people on the same code.
 
