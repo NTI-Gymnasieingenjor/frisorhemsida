@@ -1,18 +1,12 @@
-/* Animation when the site loads */
-/* @keyframes fadeIn {
-    0%   { opacity: 0; }
-    100% { opacity: 1; } 
-} */
-
-
-/* animation: fadeIn hurLänge(s) efterHurLänge(s) Animationstyp (ease-out forwards;) etc */
-
-/* h1 {
-    opacity: 0;
-    animation: fadeIn 1.25s .25s ease-out forwards;
+/* properties for title that scales the font-size depending on the screen size */
+@media (max-width: 740px){
+    h1 {
+        font-size: 40px  !important;
+    }
 }
 
-footer {
-    opacity: 0;
-    animation: fadeIn .5s .75s ease-out forwards;
-} */
+@media (max-width: 300px){
+    h1 {
+        font-size: 30px  !important;
+    }
+}
