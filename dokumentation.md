@@ -62,4 +62,21 @@ Setup:
         - Press "Join collaboration session..."
         - In the pop-up window paste the URL you got and VS Code does the rest
 
+### Selenium
+
 #
+
+Extension for Python
+
+Setup: 
+    - Open the Command Prompt
+    - Type `pip install selenium`
+    
+### Chromedriver
+
+#
+
+Tool to access google with Selenium
+
+Setup: 
+    - Head to "https://chromedriver.chromium.org/downloads"
