@@ -73,7 +73,10 @@ Selenium is a tool used to control websites with code. With the extenstion for P
 Setup: 
 
     - Open the Command Prompt
+
     - Type `pip install selenium`
+
     - To use type "from selenium import ..."
+    
     - See code comments for more information regarding the use of Selenium
     
