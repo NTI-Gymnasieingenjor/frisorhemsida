@@ -37,4 +37,4 @@ Comments: Visual Studio Code [CTRL + *]
 
 ## Documentation
 
-https://gitlab.com/fabilus/frisorhemsida/-/blob/master/dokumentation.md
+https://gitlab.com/fabilus/frisorhemsida/-/blob/master/documentation.md
