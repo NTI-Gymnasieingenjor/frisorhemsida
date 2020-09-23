@@ -69,6 +69,7 @@ Setup:
 Extension for Python
 
 Setup: 
+
     - Open the Command Prompt
     - Type `pip install selenium`
     
