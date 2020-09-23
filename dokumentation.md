@@ -68,6 +68,8 @@ Setup:
 
 Extension for Python
 
+Selenium is a tool used to control websites with code. With the extenstion for Python we can use Python code to remotley access a website and do things such as clicks. This is great for things such as our automatic HTML Validatior etc.
+
 Setup: 
 
     - Open the Command Prompt
