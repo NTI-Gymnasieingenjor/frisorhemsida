@@ -17,19 +17,19 @@ VS Code's `Live Server` is an extenstion that allows you to set upp a live serve
 
 Setup:
 
-- In VS Code go to extensions on your left menu or press [CTRL + Shift + X]
+    - In VS Code go to extensions on your left menu or press [CTRL + Shift + X]
 
-- Search for "`Live Server`"
+    - Search for "`Live Server`"
 
-- Click on the first one and press install 
+    - Click on the first one and press install 
 
-- `IMPORTANT:` Open the file you wish to see live with "Open Folder" and `not` "Open File"
+    - `IMPORTANT:` Open the file you wish to see live with "Open Folder" and `not` "Open File"
 
-- Open your desired file
+    - Open your desired file
 
-- Press the `"Go Live"` button in the bottom right corner
+    - Press the `"Go Live"` button in the bottom right corner
 
-- After a few seconds it will show your current file in your standard browser
+    - After a few seconds it will show your current file in your standard browser
 
 ### Live Share
 
@@ -43,23 +43,23 @@ However it's not perfect as only the one hosting can actually execute code. If m
 
 Setup:
 
-- In VS Code go to extensions on your left menu or press [CTRL + Shift + X]
+    - In VS Code go to extensions on your left menu or press [CTRL + Shift + X]
 
-- Search for "`Live Share`"
+    - Search for "`Live Share`"
 
-- Click on the first one and press install 
+    - Click on the first one and press install 
 
-- On your left menu you should now see an added icon `"Live Share"`
+    - On your left menu you should now see an added icon `"Live Share"`
 
-- Decide if you want to join a session or start one 
+    - Decide if you want to join a session or start one 
 
-- Starting a session:
-    - Press "Start collaboration session.."
-    - On the bottom right you will see that VS Code copied the link
-    - Send the link to whomever you wish to join
+    - Starting a session:
+        - Press "Start collaboration session.."
+        - On the bottom right you will see that VS Code copied the link
+        - Send the link to whomever you wish to join
 
- - Joining a session:
-    - Press "Join collaboration session..."
-    - In the pop-up window paste the URL you got and VS Code does the rest
+    - Joining a session:
+        - Press "Join collaboration session..."
+        - In the pop-up window paste the URL you got and VS Code does the rest
 
 #
