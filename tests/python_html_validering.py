@@ -1,30 +1,81 @@
-import unittest
+# Imports the necessary selenium extensions
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.support.ui import Select
 
-class PythonOrgSearch(unittest.TestCase):
+# Creates a variable "options" with the Options() class attributes
+options = Options()
 
-    def setUp(self):
-        self.driver = webdriver.Firefox()
+# Sets the headless option to True (Runs without a window (Set to: Failure to see live))
+options.headless = True
 
-    # Testet startar
-    def test_search_in_python_org(self):
-        driver = self.driver
+# Two variables with diffrent file paths
+PATH = "C:\Program Files (x86)\chromedriver.exe"
+# NOTE : Switch out your user to your own, do not use "fredrik.nyberg" as a file path on your PC
+#        Make sure it's in the correct path
+PATH2 = "C:\\Users\\fredrik.nyberg\\Documents\\GitHub\\frisorhemsida\\public\\index.html"
 
-        # Laddar in hemsidan
-        driver.get("https://validator.w3.org")
-        elem = driver.find_element_by_name("uri")
-        elem.send_keys("https://fabilus.gitlab.io/frisorhemsida/")
-        elem.send_keys(Keys.RETURN)
+# Variable with location to chromedriver.exe and the headless option
+driver = webdriver.Chrome(PATH, options=options)
 
-        # Laddar in nya element
-        driver.get("https://validator.w3.org/nu/?doc=https%3A%2F%2Ffabilus.gitlab.io%2Ffrisorhemsida%2F")
+# ==========================================================================================================
 
-        # Försöker hitta classen success
-            # Om den inte hittar success på sidan så har den misslyckat valideringen
-        verify = driver.find_element_by_class_name("success")
+# Validates Locally
 
-        assert "No results found." not in driver.page_source
+# ==========================================================================================================
 
-if __name__ == "__main__":
-    unittest.main()
+# Loads in the website
+driver.get("https://html5.validator.nu/")
+
+# Variable which looks in dropdown menu element "docselect"
+select = Select(driver.find_element_by_id("docselect"))
+# Looks for element "File Upload" in the visable dropdown menu "docselect"
+select.select_by_visible_text("File Upload")
+
+# Looks for the id "doc" element and sends the file path to index aka PATH2
+driver.find_element_by_id("doc").send_keys(PATH2)
+
+# Makes a variable which stores the "submit" element. The check button on the browser
+link = driver.find_element_by_id('submit')
+# Clicks on the stored element
+link.click()
+
+print("Validating locally...")
+# If
+try:
+    driver.find_element_by_class_name("success")
+    print("Success! The local code is validated.\n")
+#Else
+except:
+    print("Failure! The local code i NOT validated.\n Errors:\n")
+    # Looks in the "ol" tag and prints out the content aka the errors
+    for mistakes in driver.find_elements_by_tag_name('ol'):
+       print(mistakes.text, "\n")
+
+# ==========================================================================================================
+
+# Validates Online
+
+# ==========================================================================================================
+
+driver.get("https://html5.validator.nu/")
+
+select = Select(driver.find_element_by_id("docselect"))
+select.select_by_visible_text("Address")
+
+# Looks for the id "doc" element and sends URL of our website
+driver.find_element_by_id("doc").send_keys("https://fabilus.gitlab.io/frisorhemsida/")
+
+link = driver.find_element_by_id('submit')
+link.click()
+
+print("Validating online...")
+try:
+    driver.find_element_by_class_name("success")
+    print("Success! The online code is validated.\n")
+except:
+    print("Failure! The online code i NOT validated.\n")
+    for mistakes in driver.find_elements_by_tag_name('ol'):
+       print(mistakes.text)
+       print("\n")

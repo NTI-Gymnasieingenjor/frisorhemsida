@@ -62,4 +62,21 @@ Setup:
         - Press "Join collaboration session..."
         - In the pop-up window paste the URL you got and VS Code does the rest
 
+### Selenium
+
 #
+
+Extension for Python
+
+Selenium is a tool used to control websites with code. With the extenstion for Python we can use Python code to remotley access a website and do things such as clicks. This is great for things such as our automatic HTML Validatior etc.
+
+Setup: 
+
+    - Open the Command Prompt
+
+    - Type `pip install selenium`
+
+    - To use type "from selenium import ..."
+    
+    - See code comments for more information regarding the use of Selenium
+    
