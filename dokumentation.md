@@ -72,12 +72,6 @@ Setup:
 
     - Open the Command Prompt
     - Type `pip install selenium`
+    - To use type "from selenium import ..."
+    - See code comments for more information regarding the use of Selenium
     
-### Chromedriver
-
-#
-
-Tool to access google with Selenium
-
-Setup: 
-    - Head to "https://chromedriver.chromium.org/downloads"
