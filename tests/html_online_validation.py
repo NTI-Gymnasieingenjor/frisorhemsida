@@ -14,6 +14,7 @@ options.headless = True
 driver = webdriver.Chrome(options=options)
 
 
+
 # Validates Online
 
 # ==========================================================================================================
