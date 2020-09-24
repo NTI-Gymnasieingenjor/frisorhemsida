@@ -11,13 +11,13 @@ options = Options()
 options.headless = True
 
 # Two variables with diffrent file paths
-PATH = "C:\Program Files (x86)\chromedriver.exe"
+# PATH = "C:\Program Files (x86)\chromedriver.exe"
 # NOTE : Switch out your user to your own, do not use "fredrik.nyberg" as a file path on your PC
 #        Make sure it's in the correct path
-PATH2 = "C:\\Users\\fredrik.nyberg\\Documents\\GitHub\\frisorhemsida\\public\\index.html"
+PATH2 = "C:\\Users\\sebastian.landen1\\Documents\\GitHub\\frisorhemsida\\public\\index.html"
 
 # Variable with location to chromedriver.exe and the headless option
-driver = webdriver.Chrome(PATH, options=options)
+driver = webdriver.Chrome(options=options)
 
 # ==========================================================================================================
 
