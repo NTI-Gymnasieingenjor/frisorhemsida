@@ -1,3 +1,7 @@
+stages:
+  - deploy
+  - tests
+
 pages:
   stage: deploy
   script:
@@ -9,3 +13,9 @@ pages:
     - public
   only:
   - master
+
+validation:
+  stage: tests
+  script:
+    - cd tests
+    - python3 python_html_validering.py
