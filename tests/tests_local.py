@@ -9,7 +9,7 @@ options = Options()
 options.headless = True
 
 # Variable with PATH and the headless option that later starts a chrome window
-driver = webdriver.Chrome(chrome_options=options)
+driver = webdriver.Chrome(options=options)
 
 # Locates the parent directory of tests aka "frisorhemsida"
 parentPath = os.path.abspath(os.path.join(os.getcwd(), os.pardir))
