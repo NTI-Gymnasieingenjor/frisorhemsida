@@ -21,9 +21,6 @@ before_script:
 validation:
   image: python:3.8
   stage: tests
-  services:
-    - selenium/standalone-chrome
   script:
     - cd tests
     - python3 html_online_validation.py
-    - npm run tests --host=selenium__standalone-chrome
