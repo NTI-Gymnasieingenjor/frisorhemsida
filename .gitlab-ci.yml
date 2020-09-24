@@ -24,4 +24,4 @@ validation:
   stage: tests
   script:
     - cd tests
-    - python3 python_html_validering.py
+    - python3 html_online_validation.py
