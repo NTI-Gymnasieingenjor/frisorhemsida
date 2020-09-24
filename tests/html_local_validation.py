@@ -8,8 +8,18 @@ from selenium.webdriver.support.ui import Select
 # Locates the parent directory of tests aka "frisorhemsida"
 parentPath = os.path.abspath(os.path.join(os.getcwd(), os.pardir))
 
+
+
 # Where we want to go from the parent directory => index
 desiredPath = "\\public\\index.html"
+
+chromePath = os.getcwd()
+chromePath2 = "/chromedriver.exe"
+
+PATH = chromePath + chromePath2
+
+print(chromePath)
+
 
 # Creates a variable "options" with the Options() class attributes
 options = Options()
@@ -18,7 +28,7 @@ options = Options()
 options.headless = True
 
 # Variable with location to chromedriver.exe and the headless option
-driver = webdriver.Chrome(options=options)
+driver = webdriver.Chrome(executable_path=PATH, options=options)
 
 
 # Validates Locally
