@@ -28,7 +28,7 @@ options = Options()
 options.headless = True
 
 # Variable with location to chromedriver.exe and the headless option
-driver = webdriver.Chrome(PATH, options=options)
+driver = webdriver.Chrome(executable_path=PATH, options=options)
 
 
 # Validates Locally
