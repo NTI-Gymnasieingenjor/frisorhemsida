@@ -15,7 +15,7 @@ pages:
   - master
 
 before_script:
-  - pip install selenium
+  - pip install -U selenium
   - pip install chromedriver
 
 validation:
