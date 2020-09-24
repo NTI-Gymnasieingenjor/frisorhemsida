@@ -14,10 +14,11 @@ pages:
   only:
   - master
 
-before_script:
-  - pip install -U selenium
+# before_script:
+#   - pip install -U selenium
 
 validation:
+  image: python:3.8
   stage: tests
   script:
     - cd tests
