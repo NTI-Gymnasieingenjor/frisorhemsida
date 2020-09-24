@@ -25,3 +25,6 @@ validation:
   script:
     - cd tests
     - python3 html_online_validation.py
+  artifacts:
+    paths:
+    - tests
