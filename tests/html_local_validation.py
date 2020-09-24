@@ -14,7 +14,7 @@ parentPath = os.path.abspath(os.path.join(os.getcwd(), os.pardir))
 desiredPath = "\\public\\index.html"
 
 chromePath = os.getcwd()
-chromePath2 = "\\chromedriver.exe"
+chromePath2 = "/chromedriver.exe"
 
 PATH = chromePath + chromePath2
 
