@@ -13,6 +13,7 @@ options.headless = True
 # Variable with location to chromedriver.exe and the headless option
 driver = webdriver.Chrome(options=options)
 
+driver.get("https://github.com/bonigarcia/webdrivermanager")
 
 # Validates Online
 
