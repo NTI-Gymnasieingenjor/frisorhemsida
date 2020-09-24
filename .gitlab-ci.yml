@@ -15,7 +15,7 @@ pages:
   - master
 
 before_script:
-  - pip3 install selenium
+  - pip install selenium
   - pip install pygeckodriver
   - pip install chromedriver
 
