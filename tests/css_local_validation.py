@@ -9,7 +9,7 @@ from selenium.webdriver.support.ui import Select
 parentPath = os.path.abspath(os.path.join(os.getcwd(), os.pardir))
 
 # Where we want to go from the parent directory => index
-desiredPath = "\\public\\index.html"
+desiredPath = "\\public\\css\style.css"
 
 # Creates a variable "options" with the Options() class attributes
 options = Options()
@@ -37,7 +37,7 @@ driver.find_element_by_xpath("/html/body/div[2]/div/fieldset[2]/form/p[3]/label/
 print("Validating locally...")
 # If
 try:
-    driver.find_element_by_class_name("success")
+    driver.find_element_by_id("congrats")
     print("Success! The local CSS code is validated.\n")
 #Else
 except:
