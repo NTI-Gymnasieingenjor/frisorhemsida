@@ -14,6 +14,9 @@ pages:
   only:
   - master
 
+before_script:
+  - pip install -U selenium
+
 validation:
   stage: tests
   script:
