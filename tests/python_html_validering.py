@@ -19,6 +19,8 @@ PATH2 = "C:\\Users\\sebastian.landen1\\Documents\\GitHub\\frisorhemsida\\public\
 # Variable with location to chromedriver.exe and the headless option
 driver = webdriver.Chrome(options=options)
 
+driver.get("https://github.com/bonigarcia/webdrivermanager")
+
 # ==========================================================================================================
 
 # Validates Locally
@@ -46,12 +48,12 @@ print("Validating locally...")
 try:
     driver.find_element_by_class_name("success")
     print("Success! The local code is validated.\n")
-#Else
+# Else
 except:
     print("Failure! The local code i NOT validated.\n Errors:\n")
     # Looks in the "ol" tag and prints out the content aka the errors
     for mistakes in driver.find_elements_by_tag_name('ol'):
-       print(mistakes.text, "\n")
+        print(mistakes.text, "\n")
 
 # ==========================================================================================================
 
@@ -77,5 +79,5 @@ try:
 except:
     print("Failure! The online code i NOT validated.\n")
     for mistakes in driver.find_elements_by_tag_name('ol'):
-       print(mistakes.text)
-       print("\n")
+        print(mistakes.text)
+        print("\n")
