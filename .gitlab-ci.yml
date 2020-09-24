@@ -16,7 +16,6 @@ pages:
 
 before_script:
   - pip install selenium
-  - pip install pygeckodriver
   - pip install chromedriver
 
 validation:
