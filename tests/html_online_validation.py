@@ -10,11 +10,8 @@ options = Options()
 # Sets the headless option to True (Runs without a window (Set to: Failure to see live))
 options.headless = True
 
-# Two variables with diffrent file paths
-PATH = "C:\Program Files (x86)\chromedriver.exe"
-
 # Variable with location to chromedriver.exe and the headless option
-driver = webdriver.Chrome(PATH, options=options)
+driver = webdriver.Chrome(options=options)
 
 
 # Validates Online
