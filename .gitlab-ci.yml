@@ -16,11 +16,10 @@ pages:
 
 before_script:
   - pip install selenium
-  - pip install chromedriver
 
 validation:
   image: python:3.8
   stage: tests
   script:
     - cd tests
-    - python3 html_online_validation.py
+    - python3 html_local_validation.py
