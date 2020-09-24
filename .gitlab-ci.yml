@@ -14,8 +14,8 @@ pages:
   only:
   - master
 
-# before_script:
-#   - pip install -U selenium
+before_script:
+  - sudo pip3 install selenium
 
 validation:
   image: python:3.8
