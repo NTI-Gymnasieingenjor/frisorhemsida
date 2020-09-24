@@ -18,67 +18,157 @@
     <title>Salong Gloria</title>
 </head>
 
-<body style="font-family: 'Roboto', sans-serif;">
+<body>
+    <!-- &nbsp; creates a non breaking space -->
+    <h1 class="display-4 text-center align-middle mt-5">Välkommen till Salong&nbsp;Gloria</h1>
+    <!-- The menu -->
+    <div id="imgContainer" class="container-fluid rounded d-flex align-items-center justify-content-center flex-column mb-4">
 
-    <h1 class="display-2 text-center align-middle" style="margin-top: 17%;">Välkommen till Salong Gloria</h1>
+        <h3 class="display-4 mt-5 rounded">Tjänster</h3>
 
+        <table id="tableServices" class="table table-light table-striped col-lg-8 m-auto rounded">
+
+            <tbody>
+                <tr>
+                    <td class="text-left">Kort hår</td>
+                    <td class="text-right">200 kr</td>
+                </tr>
+                <tr>
+                    <td class="text-left">Långt hår</td>
+                    <td class="text-right">600 kr</td>
+                </tr>
+                <tr>
+                    <td class="text-left">Barn (0-13år)</td>
+                    <td class="text-right">150 kr</td>
+                </tr>
+                <tr>
+                    <td class="text-left">Kort hår stamkund</td>
+                    <td class="text-right">150 kr</td>
+                </tr>
+                <tr>
+                    <td class="text-left">Långt hår stamkund</td>
+                    <td class="text-right">500 kr</td>
+                </tr>
+                <tr>
+                    <td class="text-left">Skägg</td>
+                    <td class="text-right">150 kr</td>
+                </tr>
+                <tr>
+                    <td class="text-left">Topping</td>
+                    <td class="text-right">200 kr</td>
+                </tr>
+                <tr>
+                    <td class="text-left">Färgning</td>
+                    <td class="text-right">560 kr</td>
+                </tr>
+                <tr>
+                    <td class="text-left">Extensions kort</td>
+                    <td class="text-right">300 kr</td>
+                </tr>
+                <tr>
+                    <td class="text-left">Extensions normal</td>
+                    <td class="text-right">400 kr</td>
+                </tr>
+                <tr>
+                    <td class="text-left">Extensions lång</td>
+                    <td class="text-right">500 kr</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+    <!-- This div contains the 3 images under the menu -->
+    <div class="container">
+        <!-- Used for positioning the images -->
+        <div id="imgFlexContainer" class="d-flex justify-content-around flex-wrap align-items-center">
+            <!-- Groups together the small images -->
+            <div id="smallImages" class="d-flex justify-content-around align-items-center flex-column" id="double-img-container">
+                <img class="img-fluid rounded" src="images/bild2.jpg" alt="Bild på Hår">
+                <img class="img-fluid rounded" src="images/bild1.jpg" alt="Bild på Salong">
+            </div>
+            
+            <!-- Contains the long image -->
+            <div id="longImage">
+                <img class="img-fluid rounded" src="images/bild3.jpg" alt="Bild på frisör och kund">
+            </div>
+        </div>  
+    </div>
     <!-- FOOTER -->
-    <footer class="page-footer fixed-bottom text-light bg-dark">
+    <footer class="page-footer text-light bg-dark">
         <div class="container-fluid text-center text-md-left">
             <!-- Row -->
-            <div class="row mt-4 mb-1">
-
-                <!-- Empty Column -->
-                <div class="col-md-3"></div>
+            <div class="row mt-4">
 
                 <!-- Contact information -->
-                <div class="col-md-2 text-center">
-                    <h4 class="mb-3">Kontaktinfo</h4>
+                <div class="col-md-6 text-center">
+                    <h2 class="mt-4">Kontaktinfo</h2>
 
-                    <ul class="list-unstyled ">
-                        <li class="mb-2">
-                            <i class="fas fa-phone mr-2"></i>
-                            <a class="text-light" href="tel:0630555555">0630-555-555</a>
-                        </li>
-                        <li class="mb-2">
-                            <i class="fa fa-envelope mr-2"></i>
-                            <a class="text-light" href="mailto:info@fabilus.gitlab.io">info@fabilus.gitlab.io</a>
-                        </li>
-                        <li class="mb-2">
-                            <i class="fas fa-home mr-2"></i>
-                            <a class="text-light" href="https://goo.gl/maps/VdqxapuECgFzjBvu9" target="blank">Fjällgatan 32H <br> 981 39 KIRUNA</a>
-                        </li>
-                    </ul>
+                    <div class="table-borderless">
+                        <table class="table text-center m-auto text-white">
+                            <!-- Justifies the table body -->
+                            <tbody>
+                                <!--  tr: Defines a table row  -->
+                                <tr>
+                                    <!-- td: Defines a standard data cell, aka the column -->
+                                    <!-- text-left = float: left; -->
+
+                                    <td class="text-center">
+                                        <i class="fas fa-phone mr-2"></i>
+                                        <a class="text-light" href="tel:0630555555">0630-555-555</a>
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <td class="text-center">
+                                        <i class="fa fa-envelope mr-2"></i>
+                                        <a class="text-light"
+                                            href="mailto:info@fabilus.gitlab.io">info@fabilus.gitlab.io</a>
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <td class="text-center">
+                                        <i class="fas fa-home mr-2"></i>
+                                        <a class="text-light" href="https://goo.gl/maps/VdqxapuECgFzjBvu9"
+                                            target="blank">Fjällgatan 32H <br> 981 39 KIRUNA</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
                 </div>
-
-                <!-- Empty Column -->
-                <div class="col-md-2"></div>
 
                 <!-- Opening Hours -->
-                <div class="col-md-2 text-center">
+                <div class="col-md-6 mt-4 text-center">
 
-                    <h4 class="mb-3">Öppettider</h4>
+                    <h2 class="mb-1">Öppettider</h2>
 
-                    <ul class="list-unstyled">
-                        <li class="mb-2">
-                            Måndag - Fredag:
-                            10-16
-                        </li>
-                        <li class="mb-2">
-                            Lördag:
-                            12-15
-                        </li>
-                        <li class="mb-2">
-                            Söndag:
-                            Stängt
-                        </li>
-                    </ul>
+                    <div class="table-borderless">
+                        <table class="table text-center w-25 m-auto text-white">
+                            <!-- Justifies the table body -->
+                            <tbody>
+                                <!--  tr: Defines a table row  -->
+                                <tr>
+                                    <!-- td: Defines a standard data cell, aka the column -->
+                                    <!-- text-left = float: left; -->
+                                    <td class="text-left">Mån‑Fre:</td>
+                                    <td class="text-right">10‑16</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">Lördag:</td>
+                                    <td class="text-right">12‑15</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">Söndag:</td>
+                                    <td class="text-right">Stängt</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
                 </div>
-
-                <!-- Empty Column -->
-                <div class="col-md-3"></div>
 
             </div>
 

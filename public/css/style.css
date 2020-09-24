@@ -1,18 +1,96 @@
-/* Animation when the site loads */
-/* @keyframes fadeIn {
-    0%   { opacity: 0; }
-    100% { opacity: 1; } 
-} */
-
-
-/* animation: fadeIn hurLänge(s) efterHurLänge(s) Animationstyp (ease-out forwards;) etc */
-
-/* h1 {
-    opacity: 0;
-    animation: fadeIn 1.25s .25s ease-out forwards;
+/* Adds the roboto font to the webpage */
+body {
+    font-family: Roboto, sans-serif;
 }
 
-footer {
-    opacity: 0;
-    animation: fadeIn .5s .75s ease-out forwards;
-} */
+/* Styles the services header */
+h3 {
+    /* !important is sometimes used as the value might get overridden by bootstrap */
+    font-size: 35px !important;
+    background-color: #FDFDFE;
+    opacity: 75%;
+    padding: 10px;
+}
+
+/* Makes the table slightly transparent */
+#tableServices {
+    opacity: 90%;
+    max-width: 1080px;
+}
+
+/* Adds a background image and a parallax effect onto it behind the menu */
+#imgContainer {
+    background-image: url('../images/huvudbild.jpg');
+    min-height: 800px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Used for positioning and centering the images */
+#imgFlexContainer {
+    max-width: 975px;
+    margin: auto;
+}
+
+/* Resizes picture to be smaller for resolutions 1200px and above */
+@media (min-width: 1200px) {
+    #longImage img {
+        max-width: 444px;
+    }
+}
+
+/* Resizes picture to be bigger for resolutions under 1199px to fit width the other images*/
+/* Also adds a margin to fix spacing issues */
+@media (max-width: 1199px) {
+    #longImage img {
+        margin: 24px 24px 24px 24px;
+        min-width: 482px;
+    }
+}
+
+/* Removes margin for resolutions 521px and under so the image won't stick out */
+@media (max-width: 521px) {
+    #longImage img {
+        margin: 24px 0px 24px 0px;
+    }
+}
+
+/* Removes the min-width so the picture picture becomes responsive for lower resolutions */
+@media (max-width: 512px) {
+    #longImage img {
+        min-width: 0;
+    }
+}
+
+/* Adds a top margin on the second image for spacing */
+#smallImages img:nth-of-type(2) {
+    margin-top: 24px !important;
+}
+
+
+/* Properties for title that scales the font-size depending on the screen size */
+@media (max-width: 740px) {
+    h1 {
+        font-size: 40px !important;
+    }
+}
+
+/* Changes font sizes on resolutions 300px and under */
+@media (max-width: 300px) {
+    h1 {
+        font-size: 30px !important;
+    }
+
+    h3 {
+        font-size: 25px !important;
+    }
+}
+
+/* Realigns the title when the resolution goes below 482px */
+@media (max-width: 481px) {
+    h1 {
+        bottom: 15px !important;
+        position: relative;
+    }
+}
