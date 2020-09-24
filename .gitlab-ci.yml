@@ -22,4 +22,4 @@ validation:
   stage: tests
   script:
     - cd tests
-    - python3 html_local_validation.py
+    - python3 html_local_validation.py fs global
