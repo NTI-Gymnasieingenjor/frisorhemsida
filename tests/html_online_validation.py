@@ -1,6 +1,5 @@
 # Imports the necessary selenium extensions
 from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import Select
@@ -13,8 +12,6 @@ options.headless = True
 
 # Variable with location to chromedriver.exe and the headless option
 driver = webdriver.Chrome(options=options)
-
-driver = webdriver.Chrome(ChromeDriverManager().install())
 
 
 # Validates Online
