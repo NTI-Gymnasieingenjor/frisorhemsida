@@ -16,7 +16,7 @@ desiredPath = "\\public\\index.html"
 chromePath = os.getcwd()
 chromePath2 = "\\chromedriver.exe"
 
-chromePath = chromePath + chromePath2
+PATH = chromePath + chromePath2
 
 print(chromePath)
 
@@ -28,7 +28,7 @@ options = Options()
 options.headless = True
 
 # Variable with location to chromedriver.exe and the headless option
-driver = webdriver.Chrome(chromePath, options=options)
+driver = webdriver.Chrome(PATH, options=options)
 
 
 # Validates Locally
