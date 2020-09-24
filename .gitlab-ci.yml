@@ -17,6 +17,7 @@ pages:
 before_script:
   - pip install selenium
   - pip install chromedriver
+  - pip install webdriver-manager
 
 validation:
   image: python:3.8
