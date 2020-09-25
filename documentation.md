@@ -13,7 +13,7 @@ In this project we make use of two branches: `master` and `development`. This is
 
 When you're working on a webpage and want to see your changes quickly you don't look at the online webpage  after commiting and pushing the code. Rather you would work on it locally berfore pushing your changes to the real deal. However making changes and then having to save your code and then refreshing your browser every singe time is not a very efficient way to work in the long run.
 
-VS Code's `Live Server` is an extenstion that allows you to set upp a live server that displays your website in a browser. Except with this it updates live when you save your code and not when you refresh your browser. This can save lots of time and makes the overall workflow way smother.
+VS Code's `Live Server` is an extenstion that allows you to set upp a live server that displays your website in a browser. Except with this it updates live when you save your code and not when you refresh your browser. This can save lots of time and makes the overall workflow way smoother.
 
 Setup:
 
