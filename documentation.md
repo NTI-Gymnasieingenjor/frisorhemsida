@@ -4,6 +4,72 @@
 
 In this project we make use of two branches: `master` and `development`. This is so that we can push code to `development` without making any changes to the current GitLab Pages-website, aka `master`. If we are forced to push code for various reasons we can do it easily without risk of intervening with the current live webpage.
 
+### Run Validation 
+
+#
+
+Both the HTML and CSS codes are validated through automatic tests. Tests can look on the code locally or online depending on what file you run.
+
+How to run a validation test:
+
+    - In "tests" located in the repository you can find four different validation tests
+
+    - Just execute one of the four files in your respective code environment to validate the code locally or online:
+
+        - "css_local_validation" tests the CSS code locally in the "public/css" folder with Selenium in chrome
+        
+        - "css_online_validation" tests the CSS code online with Selenium in chrome
+
+        - "html_local_validation" tests the HTML code locally in the "public" folder with Selenium in chrome
+
+        - "html_online_validation" tests the HTML code online with Selenium in chrome
+
+    - All of these tests will give feedback in the terminal directly from the respective validators
+
+
+### Run tests 
+
+#
+
+Tests are for checking if everything is on the page. (Right now we need to start them manually before we push)
+
+    How to start website tests with Selenium in Python:
+
+        - Install Python 3.8.5 (during installation check box Add Python to path, then reboot your system)
+
+        - If you want to test website locally from index.html (execute tests_local.py in your code environment)
+
+        - If you want to test website online from URL (execute tests_online.py in your code environment)
+
+        - The test passes when you get message "Code is working excellent" otherwise it will show error code with specific line
+
+    How to create website tests with Selenium in Python (method is same for local and online tests):
+
+        - Open tests folder in your code environment
+
+        - Create a variable named element
+
+        - If you want to find text on a website you can use " driver.find_element_by_xpath("//*[contains(text(), 'yourText')]") "
+
+        - If you want to find text/photos on a website you can use " driver.find_element_by_id('yourIdInHtml') " (remember to add id in respective html file)
+
+### Selenium
+
+#
+
+Extension for Python
+
+Selenium is a tool used to control websites with code. With the extension for Python we can use Python code to remotely access a website and do things such as clicks. This is great for things such as our automatic HTML Validator etc.
+
+Setup: 
+
+    - Open the Command Prompt
+
+    - Type "pip install selenium"
+
+    - To use, type "from selenium import ..."
+    
+    - See code comments for more information regarding the use of Selenium        
 
 ### Live Server
 
@@ -62,70 +128,6 @@ Setup:
         - Press "Join collaboration session..."
         - In the pop-up window paste the URL you got and VS Code does the rest
 
-### Selenium
-
-#
-
-Extension for Python
-
-Selenium is a tool used to control websites with code. With the extension for Python we can use Python code to remotely access a website and do things such as clicks. This is great for things such as our automatic HTML Validator etc.
-
-Setup: 
-
-    - Open the Command Prompt
-
-    - Type "pip install selenium"
-
-    - To use, type "from selenium import ..."
-    
-    - See code comments for more information regarding the use of Selenium
 
 
-### Run Validation 
 
-#
-
-Both the HTML and CSS codes are validated through automatic tests. Tests can look on the code locally or online depending on what file you run.
-
-How to run a validation test:
-
-    - In "tests" located in the repository you can find four different validation tests
-
-    - Just execute one of the four files in your respective code environment to validate the code locally or online:
-
-        - "css_local_validation" tests the CSS code locally in the "public/css" folder with Selenium in chrome
-        
-        - "css_online_validation" tests the CSS code online with Selenium in chrome
-
-        - "html_local_validation" tests the HTML code locally in the "public" folder with Selenium in chrome
-
-        - "html_online_validation" tests the HTML code online with Selenium in chrome
-
-    - All of these tests will give feedback in the terminal directly from the respective validators
-
-
-### Run tests 
-
-#
-
-Tests are for checking if everything is on the page. (Right now we need to start them manually before we push)
-
-    How to start website tests with Selenium in Python:
-
-        - Install Python 3.8.5 (during installation check box Add Python to path, then reboot your system)
-
-        - If you want to test website locally from index.html (execute tests_local.py in your code environment)
-
-        - If you want to test website online from URL (execute tests_online.py in your code environment)
-
-        - The test passes when you get message "Code is working excellent" otherwise it will show error code with specific line
-
-    How to create website tests with Selenium in Python (method is same for local and online tests):
-
-        - Open tests folder in your code environment
-
-        - Create a variable named element
-
-        - If you want to find text on a website you can use " driver.find_element_by_xpath("//*[contains(text(), 'yourText')]") "
-
-        - If you want to find text/photos on a website you can use " driver.find_element_by_id('yourIdInHtml') " (remember to add id in respective html file)
