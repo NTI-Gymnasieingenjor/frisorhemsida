@@ -9,7 +9,7 @@ options = Options()
 options.headless = True
 
 # Variable with PATH and the headless option that later starts a chrome window
-driver = webdriver.Chrome(chrome_options=options)
+driver = webdriver.Chrome(options=options)
 
 # Locates the parent directory of tests aka "frisorhemsida"
 parentPath = os.path.abspath(os.path.join(os.getcwd(), os.pardir))
@@ -25,7 +25,7 @@ element = driver.find_element_by_id('title')
 
 # Variable which will look for the specified text ("//*[contains(text(), 'Desired text here')]")
 element = driver.find_element_by_xpath("//*[contains(text(), 'Tjänster')]")
-element = driver.find_element_by_id('table-services')
+element = driver.find_element_by_id('tableServices')
 
 element = driver.find_element_by_id('smallImages')
 element = driver.find_element_by_id('longImage')

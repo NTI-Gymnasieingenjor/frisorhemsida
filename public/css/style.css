@@ -12,7 +12,7 @@ h3 {
     padding: 10px;
 }
 
-#table-services {
+#tableServices {
     opacity: 90%;
     max-width: 1080px;
 }
@@ -61,25 +61,3 @@ h3 {
         position: relative;
     }
 }
-
-/* @media (max-width: 991px) {
-    #double-img-container img {
-        margin-bottom: 24px
-    }
-}
-
-@media (max-width: 600px) {
-    #img-container {
-        min-height: 700px;
-    }
-    h3{
-        margin-top: 5px !important;
-    }
-
-} */
-
-/* @media (min-width: 992px) {
-    #double-img-container img:nth-of-type(1) {
-        margin-bottom: 90px
-    }
-} */

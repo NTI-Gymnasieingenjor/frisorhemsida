@@ -8,7 +8,7 @@ options = Options()
 options.headless = True
 
 # Variable with PATH and the headless option that later starts a chrome window
-driver = webdriver.Chrome(chrome_options=options)
+driver = webdriver.Chrome(options=options)
 
 # Loads in the website
 driver.get("https://fabilus.gitlab.io/frisorhemsida/")
@@ -17,7 +17,7 @@ element = driver.find_element_by_id('title')
 
 # Variable which will look for the specified text ("//*[contains(text(), 'Desired text here')]")
 element = driver.find_element_by_xpath("//*[contains(text(), 'Tjänster')]")
-element = driver.find_element_by_id('table-services')
+element = driver.find_element_by_id('tableServices')
 
 element = driver.find_element_by_id('smallImages')
 element = driver.find_element_by_id('longImage')
