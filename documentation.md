@@ -39,7 +39,7 @@ Two or more people on the same code.
 
 Live Share makes it possible for two or more people to work on the same code at the same time on different set-ups. This is incredibly useful when people have to participate from home. One person can host and other people can join in and work on the same thing.
 
-However it's not perfect as only the one hosting can actually execute code. If many changes are made at the same time and somebody wants to revert with [CTRL + Z] it could mess with what other people are working on. We use this mostly to pinpoint mistakes and add thing from home. You could also make a read only session if you only want people to read.
+However it's not perfect as only the one hosting can actually execute code. If many changes are made at the same time and somebody wants to revert with [CTRL + Z] it could mess with what other people are working on. We use this mostly to pinpoint mistakes and add things from home. You could also make a read only session if you only want people to read.
 
 Setup:
 
