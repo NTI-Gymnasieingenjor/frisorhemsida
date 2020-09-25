@@ -27,9 +27,9 @@
 
 ## Coding Standard
 
-File name structure: this_is_how_you_do
+**File name structure:** this_is_how_you_do
 
-Variables/ID/HTML-classes: thisIsHowYouDo (camelCaseExample)
+**Variables/ID/HTML-classes:** thisIsHowYouDo (camelCaseExample)
 
 ## Definition of Done
 
