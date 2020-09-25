@@ -104,7 +104,7 @@ How to run a validation test:
     - All of these tests will give feedback in the terminal directly from the respective validators
 
 
-### Tests documatation
+### Run tests 
 
 #
 
