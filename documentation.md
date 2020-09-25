@@ -11,9 +11,9 @@ In this project we make use of two branches: `master` and `development`. This is
 
 `Live server` is a good way to check changes quickly.
 
-When you're working on a webpage and want to see your changes quickly you don't look at the online webpage after commiting and pushing the code. Rather you would work on it locally before pushing your changes to the real deal. However making changes and then having to save your code and then refreshing your browser every singe time is not a very efficient way to work in the long run.
+When you're working on a webpage and want to see your changes quickly you don't look at the online webpage after committing and pushing the code. Rather you would work on it locally before pushing your changes to the real deal. However making changes and then having to save your code and then refreshing your browser every singe time is not a very efficient way to work in the long run.
 
-VS Code's `Live Server` is an extension that allows you to set upp a live server that displays your website in a browser. Except with this it updates live when you save your code and not when you refresh your browser. This can save lots of time and makes the overall workflow way smoother.
+VS Code's `Live Server` is an extension that allows you to set up a live server that displays your website in a browser. Except with this it updates live when you save your code and not when you refresh your browser. This can save lots of time and makes the overall workflow way smoother.
 
 Setup:
 
@@ -37,9 +37,9 @@ Setup:
 
 Two or more people on the same code.
 
-Live Share makes it possible for two or more people to work on the same code at the same time on diffrent set-ups. This is incredibly useful when people have to participate from home. One person can host and other people can join in and work on the same thing.
+Live Share makes it possible for two or more people to work on the same code at the same time on different set-ups. This is incredibly useful when people have to participate from home. One person can host and other people can join in and work on the same thing.
 
-However it's not perfect as only the one hosting can actually execute code. If many changes are made at the same time and somebody want to revert with [CTRL + Z] it could mess with what other people are working on. We use this mostly to pinpoint mistakes and add things from home. You could also make a read only session if you only want people to read.
+However it's not perfect as only the one hosting can actually execute code. If many changes are made at the same time and somebody wants to revert with [CTRL + Z] it could mess with what other people are working on. We use this mostly to pinpoint mistakes and add thing from home. You could also make a read only session if you only want people to read.
 
 Setup:
 
@@ -68,7 +68,7 @@ Setup:
 
 Extension for Python
 
-Selenium is a tool used to control websites with code. With the extenstion for Python we can use Python code to remotley access a website and do things such as clicks. This is great for things such as our automatic HTML Validatior etc.
+Selenium is a tool used to control websites with code. With the extenstion for Python we can use Python code to remotely access a website and do things such as clicks. This is great for things such as our automatic HTML Validatior etc.
 
 Setup: 
 
