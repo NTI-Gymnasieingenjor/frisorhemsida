@@ -18,6 +18,11 @@ h3 {
     max-width: 1080px;
 }
 
+/* Removes border from td elements which causes problems with rounded bootstrap property */
+td {
+    border: none !important;
+}
+
 /* Adds a background image and a parallax effect onto it behind the menu */
 #imgContainer, #imgContainer:before {
     background-image: url('../images/huvudbild.jpg');
