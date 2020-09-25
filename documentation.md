@@ -80,7 +80,8 @@ Setup:
     
     - See code comments for more information regarding the use of Selenium
 
-### Run tests
+
+### Run Validation 
 
 #
 
@@ -88,9 +89,9 @@ Both the HTML and CSS codes are validated through automatic tests. Tests can loo
 
 How to run a test:
 
-    - In "tests" located in the repository you can find 6 different tests
+    - In "tests" located in the repository you can find four different validation tests
 
-    - Just execute one of the six files in your respective code environments to validate the code:
+    - Just execute one of the four files in your respective code environment to validate the code locally or online:
 
         - "css_local_validation" tests the CSS code locally in the "public/css" folder with Selenium in chrome
         
