@@ -1,81 +1,82 @@
-# Dokumentation för projekt
+# Project documentation
 
 ## Branches
 
-Projektet har just nu två permanenta branches: `master` och `development`. Detta är för att vi ska kunna köra git push på vår kod utan att det påverkar GitLab Pages-hemsidan, t.ex. ifall ofärdig kod är fast på någons dator. Eftersom vi alltid parprogrammerar kändes detta som nödvändigt, även om det kanske är en tillfällig lösning.
+In this project we make use of two branches: `master` and `development`. This is so that we can push code to `development` without making any changes to the current GitLab Pages-website, aka `master`. If we are forced to push code for various reasons we can do it easily without risk of intervening with the current live webpage.
 
-## Alternativ för layout av hemsida
 
-Vi skriver HTML- och CSS-kod med hjälp av ramverket Bootstrap.
+### Live Server
 
-Vi bytte från att skriva allt från grunden till att använda Bootstrap efter att ha läst på om fem alternativ till layouting av hemsida. Vi dokumenterade för- och nackdelar med varje alternativ och valde sedan utifrån dem att använda Bootstrap. Vi valde att använda Bootstrap eftersom det:
+#
 
-- Används ofta och är väldokumenterat.
-- Verkade mer effektivt att använda ett helt ramverk än en enkel metod.
-- Är mer avancerat och välprövat än ramverket W3.CSS.
-- Verkar som en bra sak att lära sig.
+`Live server` is a good way to check changes quickly.
 
-### Flexbox Layout
+When you're working on a webpage and want to see your changes quickly you don't look at the online webpage  after commiting and pushing the code. Rather you would work on it locally berfore pushing your changes to the real deal. However making changes and then having to save your code and then refreshing your browser every singe time is not a very efficient way to work in the long run.
 
-    Fördelar:
-    - Lätt att centrera perfekt.
-    - Bra för att strukturera objekt på sidan.
-    - Flexibelt och responsivt utan att använda positionering.
-    - Väldokumenterat.
+VS Code's `Live Server` is an extenstion that allows you to set upp a live server that displays your website in a browser. Except with this it updates live when you save your code and not when you refresh your browser. This can save lots of time and makes the overall workflow way smother.
+
+Setup:
+
+    - In VS Code go to extensions on your left menu or press [CTRL + Shift + X]
+
+    - Search for "`Live Server`"
+
+    - Click on the first one and press install 
+
+    - `IMPORTANT:` Open the file you wish to see live with "Open Folder" and `not` "Open File"
+
+    - Open your desired file
+
+    - Press the `"Go Live"` button in the bottom right corner
+
+    - After a few seconds it will show your current file in your standard browser
+
+### Live Share
+
+#
+
+Two or more people on the same code.
+
+Live Share makes it possible for two or more people to work on the same code at the same time on diffrent set-ups. This is incredibly useful when people have to participate from home. One person can host and other people can join in and work on the same thing.
+
+However it's not perfect as only the one hosting can actually execute code. If many changes are made at the same time and somebody want to revert with [CTRL + Z] it could mess with what other people are working on. We use this mostly to pinpoint mistakes and add thing from home. You could also make a read only session if you only want people to read.
+
+Setup:
+
+    - In VS Code go to extensions on your left menu or press [CTRL + Shift + X]
+
+    - Search for "`Live Share`"
+
+    - Click on the first one and press install 
+
+    - On your left menu you should now see an added icon `"Live Share"`
+
+    - Decide if you want to join a session or start one 
+
+    - Starting a session:
+        - Press "Start collaboration session.."
+        - On the bottom right you will see that VS Code copied the link
+        - Send the link to whomever you wish to join
+
+    - Joining a session:
+        - Press "Join collaboration session..."
+        - In the pop-up window paste the URL you got and VS Code does the rest
+
+### Selenium
+
+#
+
+Extension for Python
+
+Selenium is a tool used to control websites with code. With the extenstion for Python we can use Python code to remotley access a website and do things such as clicks. This is great for things such as our automatic HTML Validatior etc.
+
+Setup: 
+
+    - Open the Command Prompt
+
+    - Type `pip install selenium`
+
+    - To use type "from selenium import ..."
     
-    Nackdelar:
-    - Inte lika omfattande som ett helt ramverk.
-    - Fungerar inte med Internet Explorer 10 eller tidigare.
-
-### Grid Layout
-
-    Fördelar:
-    - Anpassar sidan så att proporionerna alltid är korrekta.
-    - Enkelt att strukturera hemsidan i rader och kolumner.
-    - Väldokumenterat.
-
-    Nackdelar:
-    - Inte lika omfattande som ett helt ramverk.
-    - Innehållet är inte lika responsivt som raderna/kolumnerna.
-
-### Float Layout
-
-    Fördelar:
-    - Lätt att placera saker intill varandra.
-    - Väldokumenterat.
-
-    Nackdelar:
-    - Buggigt när det används till mycket på en hemsida.
-
-### W3.CSS
-
-    Fördelar:
-    - Ett helt ramverk.
-    - Lätt att använda.
-    - Använder enbart HTML och CSS.
-
-    Nackdelar:
-    - Inte det vanligaste ramverket (inte lika dokumenterat).
-
-### Bootstrap
-
-    Fördelar:
-    - Ett helt ramverk.
-    - Mycket väldokumenterat (det kändaste och mest använda ramverket).
-    - Mer flexibel än W3.CSS.
-
-    Nackdelar:
-    - Högst inlärningskurva av alla alternativ.
-
-## Live Share
-
-Live Share är en extension till VSCode som vi har använt för att kunna arbeta tillsammans på distans. Live Share låter en person dela sin kod med andra, ungefär som ett Google-dokument. Alla kan redigera samtidigt, men filerna ligger på datorn hos den som är host för tillfället.
-
-Detta kan leda till att alla commits på Git ser ut att vara från samma person, så vi ser till att byta host när det är lämpligt.
-
-Två problem vi stött på med Live Share är:
-
-- Bara host kan köra filerna.
-- [CTRL + Z] kan förstöra andras kod.
-
-https://fabilus.gitlab.io/frisorhemsida/
+    - See code comments for more information regarding the use of Selenium
+    

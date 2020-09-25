@@ -1,3 +1,7 @@
+stages:
+  - deploy
+  - tests
+
 pages:
   stage: deploy
   script:
@@ -9,3 +13,13 @@ pages:
     - public
   only:
   - master
+
+# before_script:
+#   - pip install selenium
+
+# validation:
+#   image: python:3.8
+#   stage: tests
+#   script:
+#     - cd tests
+#     - python3 html_local_validation.py

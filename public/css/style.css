@@ -1,18 +1,63 @@
-/* Animation when the site loads */
-/* @keyframes fadeIn {
-    0%   { opacity: 0; }
-    100% { opacity: 1; } 
-} */
-
-
-/* animation: fadeIn hurLänge(s) efterHurLänge(s) Animationstyp (ease-out forwards;) etc */
-
-/* h1 {
-    opacity: 0;
-    animation: fadeIn 1.25s .25s ease-out forwards;
+body {
+    font-family: Roboto, sans-serif;
 }
 
-footer {
-    opacity: 0;
-    animation: fadeIn .5s .75s ease-out forwards;
-} */
+h3 {
+    font-size: 35px !important;
+    /* color: white; */
+    /* font-weight: bold !important; */
+    /* text-shadow:2px 2px black; */
+    background-color: #FDFDFE;
+    opacity: 75%;
+    padding: 10px;
+}
+
+#tableServices {
+    opacity: 90%;
+    max-width: 1080px;
+}
+
+#img-container {
+    background-image: url('../images/huvudbild.jpg');
+    min-height: 800px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#smallImages img:nth-of-type(2) {
+    margin-top: 24px !important;
+}
+
+#smallImages img:nth-of-type(1) {
+    /* margin-bottom: 12px !important; */
+}
+
+#longImage img{
+    margin-top: 12px !important;
+}
+
+
+/* properties for title that scales the font-size depending on the screen size */
+@media (max-width: 740px) {
+    h1 {
+        font-size: 40px !important;
+    }
+}
+
+@media (max-width: 300px) {
+    h1 {
+        font-size: 30px !important;
+    }
+
+    h3 {
+        font-size: 25px !important;
+    }
+}
+
+@media (max-width: 481px) {
+    h1 {
+        bottom: 15px !important;
+        position: relative;
+    }
+}
