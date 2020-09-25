@@ -87,7 +87,7 @@ Setup:
 
 Both the HTML and CSS codes are validated through automatic tests. Tests can look on the code locally or online depending on what file you run.
 
-How to run a test:
+How to run a validation test:
 
     - In "tests" located in the repository you can find four different validation tests
 
