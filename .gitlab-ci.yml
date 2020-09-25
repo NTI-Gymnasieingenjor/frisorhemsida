@@ -1,3 +1,15 @@
+# ChromeDriver
+
+ARG CHROME_DRIVER_VERSION=2.31
+RUN wget --no-verbose -O /tmp/chromedriver_linux64.zip https://chromedriver.storage.googleapis.com/$CHROME_DRIVER_VERSION/chromedriver_linux64.zip \
+	&& rm -rf /opt/chromedriver \
+	&& unzip /tmp/chromedriver_linux64.zip -d /opt \
+	&& rm /tmp/chromedriver_linux64.zip \
+	&& mv /opt/chromedriver /opt/chromedriver-$CHROME_DRIVER_VERSION \
+	&& chmod 755 /opt/chromedriver-$CHROME_DRIVER_VERSION \
+	&& ln -fs /opt/chromedriver-$CHROME_DRIVER_VERSION /usr/bin/chromedriver
+
+
 stages:
   - deploy
   - tests
