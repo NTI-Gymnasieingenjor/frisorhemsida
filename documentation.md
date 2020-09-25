@@ -51,7 +51,7 @@ Setup:
 
     - On your left menu you should now see an added icon `"Live Share"`
 
-    - Decide if you want to join a session or start one 
+    - Decide if you want to join a session or start your own
 
     - Starting a session:
         - Press "Start collaboration session.."
@@ -76,7 +76,7 @@ Setup:
 
     - Type `pip install selenium`
 
-    - To use type "from selenium import ..."
+    - To use, type "from selenium import ..."
     
     - See code comments for more information regarding the use of Selenium
     
