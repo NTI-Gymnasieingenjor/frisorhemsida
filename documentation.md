@@ -108,24 +108,24 @@ How to run a validation test:
 
 #
 
-Tests are for checking if everything is on the page. (Right now we need to start them manually before we push.)
+Tests are for checking if everything is on the page. (Right now we need to start them manually before we push)
 
     How to start website tests with Selenium in Python:
 
-        - Install Python 3.8.5 (during installation check box Add Python to path, then reset your computer)
+        - Install Python 3.8.5 (during installation check box Add Python to path, then reboot your system)
 
-        - If you want to test website locally from index.html (execute tests_local.py code environment)
+        - If you want to test website locally from index.html (execute tests_local.py in your code environment)
 
-        - If you want to test website online from URL (execute tests_online.py in code environment)
+        - If you want to test website online from URL (execute tests_online.py in your code environment)
 
-        - The test passes when you get message "Code is working excellent" otherwise it will show error code with specific line.
+        - The test passes when you get message "Code is working excellent" otherwise it will show error code with specific line
 
     How to create website tests with Selenium in Python (method is same for local and online tests):
 
-        - Open tests folder in code environment.
+        - Open tests folder in your code environment
 
-        - Create a variable named element.
+        - Create a variable named element
 
-        - If you want to find text on website can you use " driver.find_element_by_xpath("//*[contains(text(), 'yourText')]") "
+        - If you want to find text on a website you can use " driver.find_element_by_xpath("//*[contains(text(), 'yourText')]") "
 
-        - If you want to find on website text/photos can you use " driver.find_element_by_id('yourIdInHtml') " (remember to add id in index.html)
+        - If you want to find text/photos on a website you can use " driver.find_element_by_id('yourIdInHtml') " (remember to add id in respective html file)
