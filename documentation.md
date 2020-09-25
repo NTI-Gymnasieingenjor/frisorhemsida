@@ -79,4 +79,29 @@ Setup:
     - To use, type "from selenium import ..."
     
     - See code comments for more information regarding the use of Selenium
-    
+
+### Run tests
+
+#
+
+Both the HTML and CSS codes are validated through automatic tests. Tests can look on the code locally or online depending on what file you run.
+
+How to run a test:
+
+    - In "tests" located in the repository you can find 6 different tests
+
+    - Just execute one of the six files in your respective code environments to validate the code:
+
+        - "css_local_validation" tests the CSS code locally in the "public/css" folder with Selenium in chrome
+        
+        - "css_online_validation" tests the CSS code online with Selenium in chrome
+
+        - "html_local_validation" tests the HTML code locally in the "public" folder with Selenium in chrome
+
+        - "html_online_validation" tests the HTML code online with Selenium in chrome
+
+    - All of these tests will give feedback in the terminal directly from the respective validators
+
+
+
+     
