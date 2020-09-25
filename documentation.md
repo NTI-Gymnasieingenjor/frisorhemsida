@@ -19,15 +19,15 @@ Setup:
 
     - In VS Code go to extensions on your left menu or press [CTRL + Shift + X]
 
-    - Search for "`Live Server`"
+    - Search for "Live Server"
 
     - Click on the first one and press install 
 
-    - `IMPORTANT:` Open the file you wish to see live with "Open Folder" and `not` "Open File"
+    - IMPORTANT: Open the file you wish to see live with "Open Folder" and NOT "Open File"
 
     - Open your desired file
 
-    - Press the `"Go Live"` button in the bottom right corner
+    - Press the "Go Live" button in the bottom right corner
 
     - After a few seconds it will show your current file in your standard browser
 
@@ -45,11 +45,11 @@ Setup:
 
     - In VS Code go to extensions on your left menu or press [CTRL + Shift + X]
 
-    - Search for "`Live Share`"
+    - Search for "Live Share"
 
     - Click on the first one and press install 
 
-    - On your left menu you should now see an added icon `"Live Share"`
+    - On your left menu you should now see an added icon "Live Share"
 
     - Decide if you want to join a session or start your own
 
@@ -74,7 +74,7 @@ Setup:
 
     - Open the Command Prompt
 
-    - Type `pip install selenium`
+    - Type "pip install selenium"
 
     - To use, type "from selenium import ..."
     
