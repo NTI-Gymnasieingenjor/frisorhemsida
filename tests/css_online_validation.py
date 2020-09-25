@@ -34,7 +34,7 @@ try:
     print("Success! The online CSS code is validated.\n")
 #Else
 except:
-    print("Failure! The online CSS code i NOT validated.\n Errors:\n")
+    print("Failure! The online CSS code i NOT validated.\n")
     # Looks in the "errors" tag and prints out the content aka the errors
     print("ERRORS:")
     print("=============================================================")

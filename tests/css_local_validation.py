@@ -8,8 +8,8 @@ from selenium.webdriver.support.ui import Select
 # Locates the parent directory of tests aka "frisorhemsida"
 parentPath = os.path.abspath(os.path.join(os.getcwd(), os.pardir))
 
-# Where we want to go from the parent directory => index
-desiredPath = "\\public\\css\style.css"
+# Where we want to go from the parent directory => style.css
+desiredPath = "\\public\\css\\style.css"
 
 # Creates a variable "options" with the Options() class attributes
 options = Options()
@@ -41,14 +41,15 @@ try:
     print("Success! The local CSS code is validated.\n")
 #Else
 except:
-    print("Failure! The local CSS code i NOT validated.\n Errors:\n")
+    print("Failure! The local CSS code i NOT validated.\n")
+
     # Looks in the "errors" tag and prints out the content aka the errors
     print("ERRORS:")
     print("=============================================================")
-
     # Looks in the "errors" tag and prints out the content aka the errors
     for mistakes in driver.find_elements_by_id("errors"):
        print(mistakes.text, "\n")
+
     # Looks in the "warnings" tag and prints out the content aka the errors
     print("WARNINGS:")
     print("=============================================================")
