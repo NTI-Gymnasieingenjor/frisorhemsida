@@ -1,7 +1,5 @@
 geckodriver.log
 
-screenshots
-tests/.idea/workspace.xml
 tests/.idea/workspace.xml
 tests/.idea/vcs.xml
 tests/.idea/tests.iml
@@ -9,6 +7,3 @@ tests/.idea/modules.xml
 tests/.idea/misc.xml
 tests/.idea/inspectionProfiles/profiles_settings.xml
 tests/.idea/.name
-tests/.idea/workspace.xml
-tests/.idea/workspace.xml
-tests/.idea/workspace.xml
