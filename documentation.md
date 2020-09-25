@@ -11,23 +11,23 @@ In this project we make use of two branches: `master` and `development`. This is
 
 `Live server` is a good way to check changes quickly.
 
-When you're working on a webpage and want to see your changes quickly you don't look at the online webpage  after commiting and pushing the code. Rather you would work on it locally berfore pushing your changes to the real deal. However making changes and then having to save your code and then refreshing your browser every singe time is not a very efficient way to work in the long run.
+When you're working on a webpage and want to see your changes quickly you don't look at the online webpage after committing and pushing the code. Rather you would work on it locally before pushing your changes to the real deal. However making changes and then having to save your code and then refreshing your browser every singe time is not a very efficient way to work in the long run.
 
-VS Code's `Live Server` is an extenstion that allows you to set upp a live server that displays your website in a browser. Except with this it updates live when you save your code and not when you refresh your browser. This can save lots of time and makes the overall workflow way smother.
+VS Code's `Live Server` is an extension that allows you to set up a live server that displays your website in a browser. Except with this it updates live when you save your code and not when you refresh your browser. This can save lots of time and makes the overall workflow way smoother.
 
 Setup:
 
     - In VS Code go to extensions on your left menu or press [CTRL + Shift + X]
 
-    - Search for "`Live Server`"
+    - Search for "Live Server"
 
     - Click on the first one and press install 
 
-    - `IMPORTANT:` Open the file you wish to see live with "Open Folder" and `not` "Open File"
+    - IMPORTANT: Open the file you wish to see live with "Open Folder" and NOT "Open File"
 
     - Open your desired file
 
-    - Press the `"Go Live"` button in the bottom right corner
+    - Press the "Go Live" button in the bottom right corner
 
     - After a few seconds it will show your current file in your standard browser
 
@@ -37,21 +37,21 @@ Setup:
 
 Two or more people on the same code.
 
-Live Share makes it possible for two or more people to work on the same code at the same time on diffrent set-ups. This is incredibly useful when people have to participate from home. One person can host and other people can join in and work on the same thing.
+Live Share makes it possible for two or more people to work on the same code at the same time on different set-ups. This is incredibly useful when people have to participate from home. One person can host and other people can join in and work on the same thing.
 
-However it's not perfect as only the one hosting can actually execute code. If many changes are made at the same time and somebody want to revert with [CTRL + Z] it could mess with what other people are working on. We use this mostly to pinpoint mistakes and add thing from home. You could also make a read only session if you only want people to read.
+However it's not perfect as only the one hosting can actually execute code. If many changes are made at the same time and somebody wants to revert with [CTRL + Z] it could mess with what other people are working on. We use this mostly to pinpoint mistakes and add things from home. You could also make a read only session if you only want people to read.
 
 Setup:
 
     - In VS Code go to extensions on your left menu or press [CTRL + Shift + X]
 
-    - Search for "`Live Share`"
+    - Search for "Live Share"
 
     - Click on the first one and press install 
 
-    - On your left menu you should now see an added icon `"Live Share"`
+    - On your left menu you should now see an added icon "Live Share"
 
-    - Decide if you want to join a session or start one 
+    - Decide if you want to join a session or start your own
 
     - Starting a session:
         - Press "Start collaboration session.."
@@ -68,15 +68,15 @@ Setup:
 
 Extension for Python
 
-Selenium is a tool used to control websites with code. With the extenstion for Python we can use Python code to remotley access a website and do things such as clicks. This is great for things such as our automatic HTML Validatior etc.
+Selenium is a tool used to control websites with code. With the extension for Python we can use Python code to remotely access a website and do things such as clicks. This is great for things such as our automatic HTML Validator etc.
 
 Setup: 
 
     - Open the Command Prompt
 
-    - Type `pip install selenium`
+    - Type "pip install selenium"
 
-    - To use type "from selenium import ..."
+    - To use, type "from selenium import ..."
     
     - See code comments for more information regarding the use of Selenium
     

@@ -1,4 +1,2 @@
-geckodriver.log
-
-screenshots
-tests/.idea/workspace.xml
+.idea
+tests/.idea

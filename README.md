@@ -18,22 +18,18 @@
 - *Live Server*
 - *Live Share*
 - *Python Extension Pack*
-- *Bootstrap 4*
 
 
 *Python 3.8.2-modules:*
 - *Selenium*
 - *Requests*
+- *Os*
 
 ## Coding Standard
 
-Default Format on Save (VSCode)
+**File name structure:** this_is_how_you_do
 
-File name structure: this_is_how_you_do
-
-Variables/ID/HTML-classes: Camelnotation (camelCaseExample)
-
-Comments: Visual Studio Code [CTRL + *]
+**Variables/ID/HTML-classes:** thisIsHowYouDo (camelCaseExample)
 
 ## Definition of Done
 
