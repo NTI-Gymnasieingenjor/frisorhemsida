@@ -1,5 +1,6 @@
 geckodriver.log
 
+.idea
 tests/.idea/workspace.xml
 tests/.idea/vcs.xml
 tests/.idea/tests.iml
