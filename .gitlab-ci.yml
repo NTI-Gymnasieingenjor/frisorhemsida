@@ -2,21 +2,8 @@ stages:
   - deploy
   - tests
 
-pages:
-  stage: deploy
-  script:
-  - mkdir .public
-  - cp -r * .public
-  - mv .public public
-  artifacts:
-    paths:
-    - public
-  only:
-  - master
-
 before_script:
   - pip install selenium
-
 
 Html:
   image: joyzoursky/python-chromedriver:3.8
@@ -50,6 +37,18 @@ Tests:
     changes:
       - public/*.html
       - tests/website_tests.py
+
+pages:
+  stage: deploy
+  script:
+  - mkdir .public
+  - cp -r * .public
+  - mv .public public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
 
 
 
