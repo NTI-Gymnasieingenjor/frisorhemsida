@@ -3,6 +3,7 @@ stages:
   - deploy
 
 pages:
+  image: python:3.8
   stage: deploy
   script:
   - mkdir .public
