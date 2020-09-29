@@ -14,12 +14,42 @@ pages:
   only:
   - master
 
-# before_script:
-#   - pip install selenium
+before_script:
+  - pip install selenium
 
-# validation:
-#   image: python:3.8
-#   stage: tests
-#   script:
-#     - cd tests
-#     - python3 html_local_validation.py
+
+Html:
+  image: joyzoursky/python-chromedriver:3.8
+  stage: tests
+  script:
+    - cd tests
+    - python3 html_validation.py
+  only:
+    changes:
+      - public/*.html
+      - tests/html_validation.py
+
+Css:
+  image: joyzoursky/python-chromedriver:3.8
+  stage: tests
+  script:
+    - cd tests
+    - python3 css_validation.py
+  only:
+    changes:
+      - public/css/*.css
+      - tests/css_validation.py
+
+Tests:
+  image: joyzoursky/python-chromedriver:3.8
+  stage: tests
+  script:
+    - cd tests
+    - python3 tests.py
+  only:
+    changes:
+      - public/*.html
+      - tests/website_tests.py
+
+
+
