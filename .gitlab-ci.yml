@@ -45,7 +45,7 @@ Tests:
   stage: tests
   script:
     - cd tests
-    - python3 tests.py
+    - python3 website_tests.py
   only:
     changes:
       - public/*.html
