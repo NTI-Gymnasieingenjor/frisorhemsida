@@ -570,6 +570,16 @@ pre code {
   }
 }
 
+@media (max-width: 575px) {
+  #img-sax {
+    width: 50%;
+    height: 50%;
+  }
+  .img-sax-section{
+    padding-top: 0rem !important;
+  }
+}
+
 .container-fluid, .container-xl, .container-lg, .container-md, .container-sm {
   width: 100%;
   padding-right: 0.75rem;
@@ -10295,11 +10305,11 @@ body {
   }
 }
 
-.opening-hours-section {
+.img-sax-section {
   padding-top: 10rem;
   background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
 }
-.opening-hours-section p {
+.img-sax-section p {
   margin-bottom: 5rem;
 }
 
@@ -10315,10 +10325,37 @@ body {
     border-left: 0.5rem solid #64a19d;
   }
 }
+
+.delivery-section {
+  padding: 10rem 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%), url("../images/salong_bild.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.delivery-section .form-inline input {
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 2rem;
+  height: auto;
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  border: 0;
+}
+
 .services-section .service-text {
   padding: 3rem;
   font-size: 90%;
 }
+
+@media (max-width: 300px) {
+  .services-section .service-text {
+    padding: 1rem;
+  }
+}
+
 @media (min-width: 992px) {
   .services-section .service-text {
     padding: 3rem;

@@ -1,20 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
     <title>Salong Gloria</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/style.css" rel="stylesheet" />
 </head>
@@ -23,63 +18,54 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">Salong Gloria</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
-            </button>
+            <a class="navbar-brand js-scroll-trigger" href="#page-top" id="title-nav">Salong Gloria</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> Meny <i class="fas fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#opening-hours">Öppettider</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Tjänster</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact-delivery">Kontakt & Utkörning</a></li>
+                    <li id="nav-item1" class="nav-item"><a class="nav-link js-scroll-trigger" href="#opening-hours">Öppettider</a></li>
+                    <li id="nav-item2" class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Tjänster</a></li>
+                    <li id="nav-item3" class="nav-item"><a class="nav-link js-scroll-trigger" href="#delivery">Kontakt & Utkörning</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- Masthead-->
-    <header class="masthead">
+    <header class="masthead" id="title-background">
         <div class="container d-flex h-100 align-items-center">
             <div class="mx-auto text-center">
-                <h1 class="mx-auto my-0 text-uppercase">Salong Gloria</h1>
+                <h1 class="mx-auto my-0 text-uppercase" id="title">Salong Gloria</h1>
                 <h2 class="text-white-50 mx-auto mt-2 mb-5">Vi lyser upp din look, ett klipp åt gången</h2>
-                <a class="btn btn-primary js-scroll-trigger" href="#opening-hours">Boka tid</a>
+                <a class="btn btn-primary js-scroll-trigger" href="#opening-hours" id="book-btn">Boka tid</a>
             </div>
         </div>
     </header>
-    <!-- Opening hours DETTA SKA INTE HETA OPENING HOURS I FRAMTIDEN-->
-    <section class="opening-hours-section text-center"> 
+    <section class="img-sax-section text-center">
         <div class="container">
-            <img class="img-fluid" src="images/sax.png" alt="" />
+            <img class="img-fluid" id="img-sax" src="images/sax.png" alt="sax" />
         </div>
     </section>
-    <!-- Services -->
+    <!-- Main page -->
     <section class="services-section bg-light">
-        <div class="container">
-            <!-- Feaservice Row-->
+        <div class="container px-0">
+            <!-- Row -->
             <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="images/bild1.jpg" alt="" />
-                </div>
+                <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="images/bild1.jpg" id="img-bild1" alt="Bild på frisör som klipper kund" /></div>
                 <div class="col-xl-4 col-lg-5">
                     <div class="featured-text text-center text-lg-left">
-                        <h4>Shoreline</h4>
-                        <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use
-                            it for any project - even commercial projects! Download it, customize it, and publish your
-                            website!</p>
+                        <h4>Salong Gloria</h4>
+                        <p class="text-black-50 mb-0">Vi erbjuder professionell klippning och tar hand om våra kunder</p>
                     </div>
                 </div>
             </div>
-            <!-- service One Row-->
+            <!-- Row opening hours-->
             <div class="row justify-content-center no-gutters mb-5 mb-lg-0" id="opening-hours">
-                <div class="col-lg-6"><img class="img-fluid" src="images/bild2.jpg" alt="" /></div>
+                <div class="col-lg-6"><img class="img-fluid" id="img-bild2" src="images/bild2.jpg" alt="Bild på hår" /></div>
                 <div class="col-lg-6">
                     <div class="bg-black text-center h-100 service">
                         <div class="d-flex h-100">
                             <div class="service-text w-100 my-auto text-center text-lg-left">
                                 <h4 class="text-white">Öppettider</h4>
-                                <p class="mb-0 text-white-50">
+                                <div class="mb-0 text-white-50">
                                     <table class="table table-borderless text-white">
                                         <tbody>
                                             <tr>
@@ -96,22 +82,23 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                </p>
+                                </div>
+                                <!-- line -->
                                 <hr class="d-none d-lg-block mb-0 ml-0" />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- service Two Row-->
+            <!-- Row services-->
             <div class="row justify-content-center no-gutters">
-                <div class="col-lg-6"><img class="img-fluid" id="services" src="images/bild3.jpg" alt="" /></div>
+                <div class="col-lg-6"><img class="img-fluid" src="images/bild3.jpg" id="img-bild3" alt="Bild på frisör som klipper kund" /></div>
                 <div class="col-lg-6 order-lg-first">
-                    <div class="bg-black text-center h-100 service">
+                    <div class="bg-black text-center h-100 service" id="services">
                         <div class="d-flex h-100">
                             <div class="service-text w-100 my-auto text-center text-lg-right">
                                 <h4 class="text-white text-left">Tjänster</h4>
-                                <p class="mb-0 text-white-50">
+                                <div class="mb-0 text-white-50">
                                     <table class="table table-borderless text-white">
                                         <tbody>
                                             <tr>
@@ -160,33 +147,33 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                </p>
+                                </div>
+                                <!-- line -->
                                 <hr class="d-none d-lg-block mb-0 ml-0" />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Signup-->
-        <section class="signup-section" id="signup">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-lg-8 mx-auto text-center">
-                        <i class="fas fa-home fa-2x mb-2 text-white"></i>
-                        <h2 class="text-white mb-5">Vi erbjuder hemklippning<br>Kolla om vi kör hem till dig!</h2>
-                        <form class="form-inline d-flex">
-                            <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="input-zipcode" type="text" placeholder="Skriv in ditt postnummer..." />
-                            <button class="btn btn-primary mx-auto" type="submit" id="submit-zip">Kolla</button>
-                        </form>
-                        <p id="result">
-                            
-                        </p>
-                    </div>
+        </div>
+    </section>
+    <!-- Delivery -->
+    <section class="delivery-section" id="delivery">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto text-center">
+                    <i class="fas fa-home fa-2x mb-2 text-white"></i>
+                    <h2 class="text-white mb-5">Vi erbjuder hemklippning<br>Kolla om vi kör hem till dig!</h2>
+                    <form class="form-inline d-flex">
+                        <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="input-zipcode" type="text" placeholder="Skriv in ditt postnummer..." />
+                        <button class="btn btn-primary mx-auto" type="submit" id="submit-zip">Kolla</button>
+                    </form>
+                    <p id="result"></p>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- Contact-->
     <section class="contact-section bg-black">
         <div class="container">
@@ -197,8 +184,7 @@
                             <i class="fas fa-envelope text-primary mb-2"></i>
                             <h4 class="text-uppercase m-0">Email</h4>
                             <hr class="my-4" />
-                            <div class="small text-black-50"><a
-                                    href="mailto:info@fabilus.gitlab.io">info@fabilus.gitlab.io</a></div>
+                            <div class="small text-black-50"><a href="mailto:info@fabilus.gitlab.io">info@fabilus.gitlab.io</a></div>
                         </div>
                     </div>
                 </div>
@@ -208,8 +194,7 @@
                             <i class="fas fa-map-marked-alt text-primary mb-2"></i>
                             <h4 class="text-uppercase m-0">Adress</h4>
                             <hr class="my-4" />
-                            <div class="small text-black-50"><a href="https://goo.gl/maps/VdqxapuECgFzjBvu9"
-                                    target="blank">Fjällgatan 32H<br>981 39 KIRUNA</a></div>
+                            <div class="small text-black-50"><a href="https://goo.gl/maps/VdqxapuECgFzjBvu9" target="blank">Fjällgatan 32H<br>981 39 KIRUNA</a></div>
                         </div>
                     </div>
                 </div>
@@ -224,11 +209,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="social d-flex justify-content-center">
-                <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
-            </div> -->
         </div>
     </section>
     <!-- Bootstrap core JS-->
