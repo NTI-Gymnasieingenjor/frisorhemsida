@@ -10316,12 +10316,12 @@ body {
   }
 }
 .services-section .service-text {
-  padding: 1.5rem;
+  padding: 3rem;
   font-size: 90%;
 }
 @media (min-width: 992px) {
   .services-section .service-text {
-    padding: 5rem;
+    padding: 3rem;
   }
 
   .services-section .service-text hr {
@@ -10358,6 +10358,7 @@ body {
 
 .contact-section {
   padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 .contact-section .card {
   border: 0;
