@@ -10345,6 +10345,13 @@ body {
   border: 0;
 }
 
+@media (max-width: 346px) {
+  .delivery-section .form-inline input {
+    padding: 1rem 1.5rem;
+    font-size: 0.59rem;
+  }
+}
+
 .services-section .service-text {
   padding: 3rem;
   font-size: 90%;
