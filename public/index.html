@@ -1,181 +1,222 @@
 <!DOCTYPE html>
-<!-- Sets page language to Swedish -->
 <html lang="sv">
 
 <head>
-    <meta charset="UTF-8">
-    <!-- Makes the website adapt better to different advices -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Links to Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <!-- Links to the Roboto font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap">
-    <!-- Links to Font Awesome-icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <title id="title">Salong Gloria</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Salong Gloria</title>
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/style.css" rel="stylesheet" />
 </head>
 
-<body>
-    <!-- &nbsp; creates a non breaking space -->
-    <h1 class="display-4 text-center align-middle mt-5">Välkommen till Salong&nbsp;Gloria</h1>
-    <!-- The menu -->
-    <div id="imgContainer" class="container-fluid d-flex align-items-center justify-content-center flex-column mb-4">
-
-        <h3 class="display-4 mt-5 rounded">Tjänster</h3>
-
-        <table id="tableServices" class="table table-light table-striped col-lg-8 m-auto rounded">
-
-            <tbody>
-                <tr>
-                    <td class="text-left">Kort hår</td>
-                    <td class="text-right">200 kr</td>
-                </tr>
-                <tr>
-                    <td class="text-left">Långt hår</td>
-                    <td class="text-right">600 kr</td>
-                </tr>
-                <tr>
-                    <td class="text-left">Barn (0-13 år)</td>
-                    <td class="text-right">150 kr</td>
-                </tr>
-                <tr>
-                    <td class="text-left">Kort hår stamkund</td>
-                    <td class="text-right">150 kr</td>
-                </tr>
-                <tr>
-                    <td class="text-left">Långt hår stamkund</td>
-                    <td class="text-right">500 kr</td>
-                </tr>
-                <tr>
-                    <td class="text-left">Skägg</td>
-                    <td class="text-right">150 kr</td>
-                </tr>
-                <tr>
-                    <td class="text-left">Topping</td>
-                    <td class="text-right">200 kr</td>
-                </tr>
-                <tr>
-                    <td class="text-left">Färgning</td>
-                    <td class="text-right">560 kr</td>
-                </tr>
-                <tr>
-                    <td class="text-left">Extensions kort</td>
-                    <td class="text-right">300 kr</td>
-                </tr>
-                <tr>
-                    <td class="text-left">Extensions normal</td>
-                    <td class="text-right">400 kr</td>
-                </tr>
-                <tr>
-                    <td class="text-left">Extensions lång</td>
-                    <td class="text-right">500 kr</td>
-                </tr>
-
-            </tbody>
-        </table>
-
-    </div>
-    <!-- This div contains the 3 images under the menu -->
-    <div class="container">
-        <!-- Used for positioning the images -->
-        <div id="imgFlexContainer" class="d-flex justify-content-around flex-wrap align-items-center">
-            <!-- Groups together the small images -->
-            <div id="smallImages" class="d-flex justify-content-around align-items-center flex-column">
-                <img class="img-fluid rounded" src="images/bild2.jpg" alt="Bild på Hår">
-                <img class="img-fluid rounded" src="images/bild1.jpg" alt="Bild på Salong">
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top" id="title-nav">Salong Gloria</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> Meny <i class="fas fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li id="nav-item1" class="nav-item"><a class="nav-link js-scroll-trigger" href="#opening-hours">Öppettider</a></li>
+                    <li id="nav-item2" class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Tjänster</a></li>
+                    <li id="nav-item3" class="nav-item"><a class="nav-link js-scroll-trigger" href="#delivery">Kontakt & Utkörning</a></li>
+                </ul>
             </div>
-            
-            <!-- Contains the long image -->
-            <div id="longImage">
-                <img class="img-fluid rounded" src="images/bild3.jpg" alt="Bild på frisör och kund">
-            </div>
-        </div>  
-    </div>
-    <!-- FOOTER -->
-    <footer class="page-footer text-light bg-dark">
-        <div class="container-fluid text-center text-md-left">
-            <!-- Row -->
-            <div class="row mt-4">
-
-                <!-- Contact information -->
-                <div class="col-md-6 text-center">
-                    <h2 class="mt-4">Kontaktinfo</h2>
-
-                    <div class="table-borderless">
-                        <table class="table text-center m-auto text-white">
-                            <!-- Justifies the table body -->
-                            <tbody>
-                                <!--  tr: Defines a table row  -->
-                                <tr>
-                                    <!-- td: Defines a standard data cell, aka the column -->
-                                    <!-- text-left = float: left; -->
-
-                                    <td class="text-center">
-                                        <i class="fas fa-phone mr-2"></i>
-                                        <a class="text-light" href="tel:0630555555">0630-555-555</a>
-                                    </td>
-                                </tr>
-                                <tr>
-
-                                    <td class="text-center">
-                                        <i class="fa fa-envelope mr-2"></i>
-                                        <a class="text-light"
-                                            href="mailto:info@fabilus.gitlab.io">info@fabilus.gitlab.io</a>
-                                    </td>
-                                </tr>
-                                <tr>
-
-                                    <td class="text-center">
-                                        <i class="fas fa-home mr-2"></i>
-                                        <a class="text-light" href="https://goo.gl/maps/VdqxapuECgFzjBvu9"
-                                            target="blank">Fjällgatan 32H <br> 981 39 KIRUNA</a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                </div>
-
-                <!-- Opening Hours -->
-                <div class="col-md-6 mt-4 text-center">
-
-                    <h2 class="mb-1">Öppettider</h2>
-
-                    <div class="table-borderless">
-                        <table class="table text-center w-25 m-auto text-white">
-                            <!-- Justifies the table body -->
-                            <tbody>
-                                <!--  tr: Defines a table row  -->
-                                <tr>
-                                    <!-- td: Defines a standard data cell, aka the column -->
-                                    <!-- text-left = float: left; -->
-                                    <td class="text-left">Mån‑Fre:</td>
-                                    <td class="text-right">10‑16</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left">Lördag:</td>
-                                    <td class="text-right">12‑15</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left">Söndag:</td>
-                                    <td class="text-right">Stängt</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                </div>
-
-            </div>
-
         </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead" id="title-background">
+        <div class="container d-flex h-100 align-items-center">
+            <div class="mx-auto text-center">
+                <h1 class="mx-auto my-0 text-uppercase" id="title">Salong Gloria</h1>
+                <h2 class="text-white-50 mx-auto mt-2 mb-5">Vi lyser upp din look, ett klipp åt gången</h2>
+                <a class="btn btn-primary js-scroll-trigger" href="#opening-hours" id="book-btn">Boka tid</a>
+            </div>
+        </div>
+    </header>
+    <section class="img-sax-section text-center">
+        <div class="container">
+            <img class="img-fluid" id="img-sax" src="images/sax.png" alt="sax" />
+        </div>
+    </section>
+    <!-- Main page -->
+    <section class="services-section bg-light">
+        <div class="container px-0">
+            <!-- Row -->
+            <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="images/bild1.jpg" id="img-bild1" alt="Bild på frisör som klipper kund" /></div>
+                <div class="col-xl-4 col-lg-5">
+                    <div class="featured-text text-center text-lg-left">
+                        <h4>Salong Gloria</h4>
+                        <p class="text-black-50 mb-0">Vi erbjuder professionell klippning och tar hand om våra kunder</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Row opening hours-->
+            <div class="row justify-content-center no-gutters mb-5 mb-lg-0" id="opening-hours">
+                <div class="col-lg-6"><img class="img-fluid" id="img-bild2" src="images/bild2.jpg" alt="Bild på hår" /></div>
+                <div class="col-lg-6">
+                    <div class="bg-black text-center h-100 service">
+                        <div class="d-flex h-100">
+                            <div class="service-text w-100 my-auto text-center text-lg-left">
+                                <h4 class="text-white">Öppettider</h4>
+                                <div class="mb-0 text-white-50">
+                                    <table class="table table-borderless text-white">
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-left">Mån‑Fre:</td>
+                                                <td class="text-right">10‑16</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-left">Lördag:</td>
+                                                <td class="text-right">12‑15</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-left">Söndag:</td>
+                                                <td class="text-right">Stängt</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- line -->
+                                <hr class="d-none d-lg-block mb-0 ml-0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Row services-->
+            <div class="row justify-content-center no-gutters">
+                <div class="col-lg-6"><img class="img-fluid" src="images/bild3.jpg" id="img-bild3" alt="Bild på frisör som klipper kund" /></div>
+                <div class="col-lg-6 order-lg-first">
+                    <div class="bg-black text-center h-100 service" id="services">
+                        <div class="d-flex h-100">
+                            <div class="service-text w-100 my-auto text-center text-lg-right">
+                                <h4 class="text-white text-left">Tjänster</h4>
+                                <div class="mb-0 text-white-50">
+                                    <table class="table table-borderless text-white">
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-left">Kort hår</td>
+                                                <td class="text-right">200&nbsp;kr</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-left">Långt hår</td>
+                                                <td class="text-right">600&nbsp;kr</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-left">Barn (0-13&nbsp;år)</td>
+                                                <td class="text-right">150&nbsp;kr</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-left">Kort hår stamkund</td>
+                                                <td class="text-right">150&nbsp;kr</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-left">Långt hår stamkund</td>
+                                                <td class="text-right">500&nbsp;kr</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-left">Skägg</td>
+                                                <td class="text-right">150&nbsp;kr</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-left">Topping</td>
+                                                <td class="text-right">200&nbsp;kr</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-left">Färgning</td>
+                                                <td class="text-right">560&nbsp;kr</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-left">Extensions kort</td>
+                                                <td class="text-right">300&nbsp;kr</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-left">Extensions normal</td>
+                                                <td class="text-right">400&nbsp;kr</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-left">Extensions lång</td>
+                                                <td class="text-right">500&nbsp;kr</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- line -->
+                                <hr class="d-none d-lg-block mb-0 ml-0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- Delivery -->
+        <section class="delivery-section" id="delivery">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-8 mx-auto text-center">
+                        <i class="fas fa-home fa-2x mb-2 text-white"></i>
+                        <h2 class="text-white mb-5">Vi erbjuder hemklippning<br>Kolla om vi kör hem till dig!</h2>
+                        <form class="form-inline d-flex" id="form-zip" autocomplete="off">
+                            <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="input-zipcode" type="text" data-toggle="popover" data-placement="bottom" data-trigger="focus" placeholder="Skriv in ditt postnummer..." />
+                            <button class="btn btn-primary mx-auto" type="button" id="submit-zip" >Kolla</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    </footer>
-
-</body>
-
+    <!-- Contact-->
+    <section class="contact-section bg-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-envelope text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Email</h4>
+                            <hr class="my-4" />
+                            <div class="small text-black-50"><a href="mailto:info@fabilus.gitlab.io">info@fabilus.gitlab.io</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Adress</h4>
+                            <hr class="my-4" />
+                            <div class="small text-black-50"><a href="https://goo.gl/maps/VdqxapuECgFzjBvu9" target="blank">Fjällgatan 32H<br>981 39 KIRUNA</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Telefon</h4>
+                            <hr class="my-4" />
+                            <div class="small text-black-50"><a href="tel:0630555555">0630-555-555</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </section>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="js/postnummer.js"></script>
+    </body>
 </html>

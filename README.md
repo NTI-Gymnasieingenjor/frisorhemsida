@@ -27,9 +27,11 @@
 
 ## Coding Standard
 
-**File name structure:** this_is_how_you_do
+**File name structure:** this_is_how_you_do (underscore)
 
-**Variables/ID/HTML-classes:** thisIsHowYouDo (camelCaseExample)
+**Variables/ID/Classes** _(HTML, CSS)_ : this-is-how-you-do (dashes)
+
+**Variables/ID** _(PYTHON, JAVASCRIPT)_ : thisIsHowYouDo (camelCaseExample)
 
 ## Definition of Done
 
