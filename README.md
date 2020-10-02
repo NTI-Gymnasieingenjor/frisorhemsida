@@ -29,9 +29,9 @@
 
 **File name structure:** this_is_how_you_do (underscore)
 
-**Variables/ID/Classes** _(HTML ,CSS ,JAVASCRIPT)_ : this-is-how-you-do (dashes)
+**Variables/ID/Classes** _(HTML, CSS)_ : this-is-how-you-do (dashes)
 
-**Variables/ID** _(PYTHON)_ : thisIsHowYouDo (camelCaseExample)
+**Variables/ID** _(PYTHON, JAVASCRIPT)_ : thisIsHowYouDo (camelCaseExample)
 
 ## Definition of Done
 
