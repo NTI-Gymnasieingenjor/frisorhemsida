@@ -39,14 +39,12 @@ function zipCheck() {
             $("#input-zipcode").attr("data-content", "Vi kör hem till dig!")
             $("#input-zipcode").popover('enable')
             $("#input-zipcode").popover('show')
-            $("#input-zipcode").popover('disable')
             break;
         } 
         else {
             $("#input-zipcode").attr("data-content", "Vi kör inte hem till dig!")
             $("#input-zipcode").popover('enable')
             $("#input-zipcode").popover('show')
-            $("#input-zipcode").popover('disable')
         }
     }
 }   

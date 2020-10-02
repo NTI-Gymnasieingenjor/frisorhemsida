@@ -65,12 +65,15 @@ notWorkingZip = ["981 21", "981 88", "981 69", "752 28"]
 # Chooses a random working zip code and submits it
 element = driver.find_element_by_id("input-zipcode").send_keys(workingZip[random.randint(0, 3)])
 element = driver.find_element_by_id('submit-zip').click()
-element = driver.find_element_by_xpath("//*[contains(., 'Vi erbjuder hemklippning')]")
-element = driver.find_element_by_xpath("//*[contains(., 'Kolla om vi kör hem till dig!')]")
+element = driver.find_element_by_xpath("//*[contains(text(), 'Vi kör hem till dig!')]")
+element = driver.find_element_by_id('input-zipcode').clear()
 
 element = driver.find_element_by_id("input-zipcode").send_keys(notWorkingZip[random.randint(0, 3)])
 element = driver.find_element_by_id('submit-zip').click()
-# element = driver.find_element_by_xpath("//*[contains(text(), 'Vi kör tyvärr inte hem till dig!')]")
+element = driver.find_element_by_xpath("//*[contains(text(), 'Vi kör inte hem till dig!')]")
+
+element = driver.find_element_by_xpath("//*[contains(., 'Vi erbjuder hemklippning')]")
+element = driver.find_element_by_xpath("//*[contains(., 'Kolla om vi kör hem till dig!')]")
 
 element = driver.find_element_by_xpath("//*[contains(text(), 'Email')]")
 element = driver.find_element_by_xpath("//*[contains(text(), 'Adress')]")
