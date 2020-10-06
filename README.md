@@ -41,4 +41,4 @@
 
 ## Documentation
 
-https://gitlab.com/fabilus/frisorhemsida/-/blob/master/documentation.md
+https://github.com/NTI-Gymnasieingenjor/frisorhemsida/blob/master/documentation.md
